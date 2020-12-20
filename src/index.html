@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Пижам's</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');</style>
+</head>
+<body>
+		
+	<!-- Шапка -->
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="header-nav">
+					<ul class="header-nav-list">
+						<li class="header-nav-item"><a href="#">Доставка и оплата</a></li>
+						<li class="header-nav-item"><a href="#">Контакты</a></li>
+						<li class="header-nav-item"><a href="#">Обмен и возврат</a></li>
+						<li class="header-nav-item"><a href="#">Новости</a></li>
+					</ul>
+				</div>
+				<div class="header-phone">
+					<img src="icons/phone-icon.svg" alt="">
+					<a href="#"><span>8 800 555-35-35</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="container">
+				<div class="header-logo">
+					<a href="#">
+						<img src="icons/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-sex">
+					<div class="woman active">
+						<a href="#">Женское</a>
+					</div>
+					<div class="man">
+						<a href="#">Мужское</a>
+					</div>
+				</div>
+				<div class="header-search">
+					<input type="text" class="search" placeholder="Я ищу...">
+				</div>
+				<div class="header-order">
+					<div class="header-order-profile">
+						<a href="#">
+							<img src="icons/user-icon.svg" alt=""><br>
+							<span>Профиль</span>
+						</a>
+					</div>
+					<div class="header-order-postponed">
+						<a href="#">
+							<img src="icons/heart-icon.svg" alt=""><br>
+							<span>Отложено</span>
+						</a>
+					</div>
+					<div class="header-order-basket">
+						<a href="#">
+							<img src="icons/basket-icon.svg" alt=""><br>
+							<span>Корзина</span>
+							<span class="header-order-basket__number">1</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-menu">
+					<ul class="header-menu-list">
+						<li class="header-menu-item"><a href="#">Купальники</a></li>
+						<li class="header-menu-item">
+							<a href="#">Домашняя одежда</a>
+							<ul class="header-submenu-list">
+								<li class="header-submenu-item"><a href="#">Новинки 2020</a></li>
+								<li class="header-submenu-item"><a href="#">Верх купальника</a></li>
+								<li class="header-submenu-item"><a href="#">Плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Минибикини</a></li>
+								<li class="header-submenu-item"><a href="#">Бермуды и плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Слитные купальники</a></li>
+								<li class="header-submenu-item"><a href="#">Раздельные купальники</a></li>
+							</ul>
+						</li>
+						<li class="header-menu-item">
+							<a href="#">Эротическое бельё</a>
+							<ul class="header-submenu-list">
+								<li class="header-submenu-item"><a href="#">Новинки 2020</a></li>
+								<li class="header-submenu-item"><a href="#">Верх купальника</a></li>
+								<li class="header-submenu-item"><a href="#">Плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Минибикини</a></li>
+								<li class="header-submenu-item"><a href="#">Бермуды и плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Слитные купальники</a></li>
+								<li class="header-submenu-item"><a href="#">Раздельные купальники</a></li>
+							</ul>
+						</li>
+						<li class="header-menu-item"><a href="#">Нижнее бельё</a></li>
+						<li class="header-menu-item"><a href="#">Большие размеры</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Первый экран -->
+	<section class="main">
+		<div class="container">
+			<div class="main-slider">
+				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
+				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
+				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
+				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
+				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
+			</div>
+			<div class="main-banner">
+				<img src="img/main/main-banner.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- Новинки -->
+	<section class="new">
+		<div class="container">
+			<div class="new-title">
+				<h2>Новинки</h2>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-1.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount">-20%</span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s>1499 ₽</s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-2.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-3.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-4.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-5.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Акции -->
+	<section class="sale">
+		<div class="container">
+			<div class="sale-item">
+				<img src="img/sale/sale-img-1.jpg" alt="">
+			</div>
+			<div class="sale-item">
+				<img src="img/sale/sale-img-2.jpg" alt="">
+			</div>
+			<div class="sale-item">
+				<img src="img/sale/sale-img-3.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<!-- Преимущества -->
+	<section class="advantages">
+		<div class="container">
+			<div class="advantages-item">
+				<img src="icons/drive-icon.svg" alt="">
+				<p>Бесплатная доставка<br> от 6000 рублей</p>
+			</div>
+			<div class="advantages-item">
+				<img src="icons/money-icon.svg" alt="">
+				<p>Оплата любым<br> удобный способом</p>
+			</div>
+			<div class="advantages-item">
+				<img src="icons/feedback-icon.svg" alt="">
+				<p>Более 90 000<br> довольных покупателей</p>
+			</div>
+			<div class="advantages-item">
+				<img src="icons/loyalty-icon.svg" alt="">
+				<p>Программа<br> лояльности</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Хиты продаж -->
+	<section class="new">
+		<div class="container">
+			<div class="new-title">
+				<h2>Хиты продаж</h2>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-6.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount">-20%</span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s>1499 ₽</s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-7.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-8.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-9.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-10.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Хиты продаж(продолжение) -->
+	<section class="hot">
+		<div class="container">
+			<div class="hot-collection">
+				<img src="img/hot/hot-collection-img.jpg" alt="">
+				<p>
+					Новая коллекция домашних халатов<br>
+					<a href="#" class="btn-red">Смотреть</a>
+				</p>
+			</div>
+			<div class="hot-list">
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-1.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount">-20%</span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s>1499 ₽</s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-2.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount"></span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-3.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount"></span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-4.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount"></span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-5.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount"></span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-6.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount"></span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-7.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount"></span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hot-item">
+					<div class="hot-item__hover">
+						<div class="hot-item-photo">
+							<img src="img/hot/hot-img-8.jpg" alt="image">
+							<span class="hot-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="hot-item__discount"></span>
+						</div>
+						<div class="hot-item-description">
+							<div class="hot-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="hot-item-description-categories">
+								<span class="hot-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="hot-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Модные бренды -->
+	<section class="brand">
+		<div class="container">
+			<div class="brand-title">
+				<h2>Модные бренды</h2>
+			</div>
+			<div class="brand-slider">
+				<div class="brand-slider-item"><img src="img/brand/brand-img-1.png" alt=""></div>
+				<div class="brand-slider-item"><img src="img/brand/brand-img-2.png" alt=""></div>
+				<div class="brand-slider-item"><img src="img/brand/brand-img-3.png" alt=""></div>
+				<div class="brand-slider-item"><img src="img/brand/brand-img-4.png" alt=""></div>
+				<div class="brand-slider-item"><img src="img/brand/brand-img-5.png" alt=""></div>
+				<div class="brand-slider-item"><img src="img/brand/brand-img-6.png" alt=""></div>
+				<div class="brand-slider-item"><img src="img/brand/brand-img-7.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Новости -->
+	<div class="news">
+		<div class="container">
+			<div class="news-title">
+				<h2>Новости</h2>
+			</div>
+			<div class="news-item-big">
+				<div class="news-item-big-text">
+					<h3>Lacoste и Maison Lemarié создали совместную коллекцию</h3>
+					<p class="news-item-big-text__description">В коллекции весна-лето 2021 креативный директор Lacoste Луиза Троттер использовала стоковые ткани и винтажные элементы, тем самым подарив новую жизнь вещам...</p>
+					<p class="news-item-big-text__dats">30 октября 2020</p>
+				</div>
+				<div class="news-item-big-img">
+					<img src="img/news/news-img-1.jpg" alt="">
+				</div>
+			</div>
+			<div class="news-item">
+				<div class="news-item-img"><img src="img/news/news-img-2.jpg" alt=""></div>
+				<p class="news-item-dats">30 октября 2020</p>
+				<h3 class="news-item-title">Ольга Серябкина показывает Vogue свои свадебные платья</h3>
+				<p class="news-description">В коллекции весна-лето 2021 креативный директор Lacoste Луиза Троттер....</p>
+			</div>
+			<div class="news-item">
+				<div class="news-item-img"><img src="img/news/news-img-3.jpg" alt=""></div>
+				<p class="news-item-dats">30 октября 2020</p>
+				<h3 class="news-item-title">Ольга Серябкина показывает Vogue свои свадебные платья</h3>
+				<p class="news-description">В коллекции весна-лето 2021 креативный директор Lacoste Луиза Троттер....</p>
+			</div>
+			<div class="news-item">
+				<div class="news-item-img"><img src="img/news/news-img-4.jpg" alt=""></div>
+				<p class="news-item-dats">30 октября 2020</p>
+				<h3 class="news-item-title">Ольга Серябкина показывает Vogue свои свадебные платья</h3>
+				<p class="news-description">В коллекции весна-лето 2021 креативный директор Lacoste Луиза Троттер....</p>
+			</div>
+			<div class="news-item">
+				<div class="news-item-img"><img src="img/news/news-img-5.jpg" alt=""></div>
+				<p class="news-item-dats">30 октября 2020</p>
+				<h3 class="news-item-title">Ольга Серябкина показывает Vogue свои свадебные платья</h3>
+				<p class="news-description">В коллекции весна-лето 2021 креативный директор Lacoste Луиза Троттер....</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Подписаться -->
+	<section class="subscribe">
+		<div class="container">
+			<form action="">
+				<h2 class="subscribe-title">Получайте самые интересные<br> предложения первыми!</h2>
+				<input type="email" name="" id="" placeholder="введите email" class="subscribe-email">
+				<button type="submit" class="subscribe-submit btn-red">Подписаться</button>
+				<p class="subscribe-agree">
+					Заполняя данную форму я даю согласие  на<br> обработку персональных данных и<br> принимаю <a href="#">условия политики</a>
+				</p>
+			</form>
+		</div>
+	</section>
+
+	<!-- Подвал -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-top-phone">
+					<a href="#">+7 800 555-35-35</a>
+					<span>08:00 - 18:00 по будням</span>
+				</div>
+				<div class="footer-top-social">
+					<a href="#"><img src="icons/vk-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/instagram-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/fb-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/whatsapp-icon.svg" alt=""></a>
+				</div>
+				<div class="footer-top-email">
+					<a href="#">info@pijams.ru</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="container">
+				<div class="footer-middle-logo">
+					<img src="icons/logo-black.svg" alt="">
+				</div>
+				<div class="footer-middle-nav">
+					<ul class="footer-middle-nav-list">
+						<li class="footer-middle-nav-item">
+							<a href="#">Доставка и оплата</a>
+							<a href="#">Контакты</a>
+						</li>
+						<li class="footer-middle-nav-item">
+							<a href="#">Новости</a>
+							<a href="#">Обмен и возврат</a>
+						</li>
+						<li class="footer-middle-nav-item">
+							<a href="#">Каталог</a>
+							<a href="#">Личный кабинет</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-middle-card">
+					<img src="img/footer/footer-money-card.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<p>© 2020 Интернет магазин pijams.ru</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальные окна -->
+	<!-- Окно входа -->
+	<div class="modal auth">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Вход</h2>
+					<div class="modal-close">&times;</div>
+					<label>Электронная почта</label>
+					<input type="email" class="modal-email" placeholder="email@example.com">
+					<label>Пароль</label>
+					<input type="password" class="modal-password" placeholder="">
+					<button type="submit" class="modal-submit btn-black">Войти</button>
+					<a href="#" class="modal-forgot">Забыли пароль?</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Войдите, чтобы совершать заказы -->
+	<div class="modal warning">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<p>Войдите, чтобы делать <br> покупки и отслеживать заказы</p>
+					<div class="modal-close">&times;</div>
+					<button class="btn-black">Войти</button>
+					<button class="btn-red">Зарегистрироваться</button>
+					<div class="modal-social-auth">
+						<p>Вход через соцсети</p>
+						<a href="#"><img src="icons/vk-black-icon.svg" alt=""></a>
+						<a href="#"><img src="icons/google-black-icon.svg" alt=""></a>
+						<a href="#"><img src="icons/fb-black-icon.svg" alt=""></a>
+						<a href="#"><img src="icons/mail-black-icon.svg" alt=""></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно восстановления пароля -->
+	<div class="modal recovery">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Восстановление пароля</h2>
+					<div class="modal-close">&times;</div>
+					<label>Электронная почта</label>
+					<input type="email" class="modal-email" placeholder="email@example.com">
+					<button type="submit" class="modal-submit btn-black">Войти</button>
+					<p>Укажите адрес эл. почты, который вы использовали при регистрации. Мы вышлем вам инструкцию по восстановлению пароля.</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно регистрации -->
+	<div class="modal registration">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Регистрация</h2>
+					<div class="modal-close">&times;</div>
+					<label>Имя</label>
+					<input type="text" class="modal-name" placeholder="Ваше имя">
+					<label>Электронная почта</label>
+					<input required type="email" class="modal-email" placeholder="email@example.com">
+					<label>Телефон</label>
+					<input type="number" class="modal-number" placeholder="+7 (963) 330-81-96">
+					<label>Пароль</label>
+					<input type="password" class="modal-password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+					<label>Подтверждение пароля</label>
+					<input type="password" class="modal-password-required" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+					<button type="submit" class="modal-submit btn-black">Зарегистрироваться</button>
+					<p>Нажимая кнопку «Зарегистрироваться»<br> я принимаю условия <a href="#">пользовательского соглашения</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно оставить отзыв о товаре -->
+	<div class="modal feedback">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Оставьте отзыв о товаре</h2>
+					<div class="modal-close">&times;</div>
+					<label for="modal-name">Имя</label>
+					<div class="feedback-star">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+					</div>
+					<label>Представьтесь пожалуйста</label>
+					<input required type="text" class="modal-feedback-name" placeholder="Ваше имя">
+					<label>Поделитесь впечатлениями</label>
+					<textarea name="modal-feedback-text" class="modal-feedback-text" placeholder="Текст отзыва" cols="30" rows="10"></textarea>
+					<button type="submit" class="modal-submit btn-pink">Написать отзыв</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

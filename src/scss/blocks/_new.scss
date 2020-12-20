@@ -1,0 +1,91 @@
+// Новинки
+.new {
+	&-title {
+		width: 100%;
+		h2{
+			font-family: Montserrat, serif;
+			font-weight: 700;
+			font-size: 25px;
+			color: $black;
+		}
+	}
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-item {
+		padding: 20px 0;
+		border-radius: 25px;
+		&:hover {
+			box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+			transform: scaleX(1.2);
+			.new-item__hover {
+				transform: scaleX(0.83);
+			}
+			.new-item__like {
+				display: block;
+			}
+		}
+		&-photo {
+			position: relative;
+		}
+		&__like {
+			display: none;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+		}
+		&__discount {
+			position: absolute;
+			left: 0;
+			bottom: 4px;
+			background-color: $red;
+			color: $white;
+			font-family: Montserrat, serif;
+			font-weight: 700;
+			font-size: 14px;
+			padding: 1px 7px;
+			border-top-right-radius: 12px;
+			&:empty {
+				display: none;
+			}
+		}
+		&-description {
+			padding-top: 10px;
+			&-price {
+				span {
+					font-family: Montserrat, serif;
+					font-weight: 700;
+					font-size: 14px;
+					color: $black;
+					margin-right: 15px;
+				}
+				s {
+					font-family: Montserrat, serif;
+					font-weight: 500;
+					font-size: 14px;
+					color: $grey;
+				}
+			}
+			&-categories {
+				&__brand {
+					a {
+						text-decoration: none;
+						font-size: 14px;
+						color: $black;
+					}
+				}
+				&__active {
+					font-size: 14px;
+					color: $grey;
+					a {
+						text-decoration: none;
+						font-size: 14px;
+						color: $grey;
+					}
+				}
+			}
+		}
+	}
+}

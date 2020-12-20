@@ -1,0 +1,83 @@
+// Подвал
+.footer{
+	background-color: $black;
+	&-top{
+		.container{
+			align-items: center;
+			padding: 30px 0;
+		}
+		&-phone{
+			margin-right: 110px;
+			a{
+				display: block;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 20px;
+				color: $white;
+				margin-bottom: 10px;
+			}
+			span{
+				font-weight: 400;
+				font-size: 16px;
+				color: $white;
+			}
+		}
+		&-social{
+			img{
+				margin: 0 5px;
+			}
+		}
+		&-email{
+			flex: 1;
+			text-align: right;
+			a {
+				text-decoration: none;
+				font-weight: 400;
+				font-size: 16px;
+				color: $white;
+			}
+		}
+	}
+	&-middle{
+		.container{
+			align-items: center;
+			flex-direction: row;
+			border-top: 2px solid $darkGrey;
+			border-bottom: 2px solid $darkGrey;
+			padding: 25px 0;
+		}
+		&-logo{
+			margin-right: 70px;
+		}
+		&-nav{
+			width: 100%;
+			&-list{
+				list-style-type: none;
+				display: flex;
+			}
+			&-item{
+				a{
+					display: block;
+					font-weight: 400;
+					font-size: 14px;
+					text-decoration: none;
+					color: $white;
+					margin: 10px 70px 10px 0;
+				}
+			}
+			&-card{
+				flex: 1;
+			}
+		}
+	}
+	&-bottom{
+		.container{
+			padding: 15px 0;
+		}
+		p{
+			font-weight: 400;
+			font-size: 14px;
+			color: $white;
+		}
+	}
+}

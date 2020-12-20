@@ -1,0 +1,152 @@
+// Шапка
+.header{
+	.container {
+		align-items: center;
+	}
+	.header-top{
+		background-color: $black;
+		padding: 12px 0;
+	}
+	.header-middle{
+		margin: 20px 0;
+	}
+	.header-bottom{
+		background-color: $pink;
+	}
+	a {
+		color: $white;
+		text-decoration: none;
+		font-size: 14px;
+	}
+	&-nav{
+		&-list{
+			list-style-type: none;
+			padding-left: 0;
+			display: flex;
+		}
+		&-item{
+			padding-right: 45px;
+			a{
+				font-weight: 500;
+			}
+		}
+	}
+	&-phone{
+		display: flex;
+		align-items: center;
+		img{
+			padding-right: 5px;
+		}
+		a {
+			font-weight: 700;
+		}
+	}
+	&-sex{
+		display: flex;
+		.woman{
+			padding-right: 45px;
+		}
+		.active{
+			a{
+				color: $black;
+			}
+		}
+		a{
+			color: $grey;
+			font-weight: 700;
+			font-size: 16px;
+		}
+	}
+	&-search{
+		.search{
+			border: 1px solid $grey;
+			border-radius: 5px;
+			font-size: 14px;
+			color: $grey;
+			padding: 14px 28px;
+			width: 380px;
+		}
+	}
+	&-order{
+		display: flex;
+		text-align: center;
+		justify-content: space-between;
+		align-items: flex-end;
+		a{
+			span{
+				color: $black;
+				font-weight: 600;
+				font-size: 14px;
+			}
+		}
+		&-postponed, &-basket{
+			padding-left: 23px;
+		}
+		&-basket{
+			position: relative;
+			&__number{
+				position: absolute;
+				content: '1';
+				top: -5px;
+				right: 7px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 20px;
+				width: 20px;
+				background-color: $pink;
+				border-radius: 20px;
+			}
+		}
+	}
+	&-menu{
+		&-list {
+			list-style-type: none;
+			padding-left: 0;
+			display: flex;
+		}
+		&-item {
+			&:hover{
+				position: relative;
+				.header-submenu-list{
+					display: block;
+					flex-wrap: wrap;
+					width: 150%;
+				}
+			}
+			.header-submenu {
+				&-list{
+					z-index: 10;
+					display: none;
+					position: absolute;
+					list-style-type: none;
+					background-color: $white;
+					box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+					border-radius: 0px 0px 31px 31px;
+					padding: 15px 0 25px 0;
+				}
+				&-item{
+					a{
+						padding: 10px 31px;
+					}
+				}
+			}
+			&:first-child{
+				a{
+					padding-left: 31px;
+					margin-left: -31px;
+				}
+			}
+			a {
+				display: block;
+				font-weight: 700;
+				color: $black;
+				padding: 17px 31px;
+				&:hover{
+					background-color: $pink-hover;
+					color: $white;
+				}
+			}
+		}
+	}
+}
