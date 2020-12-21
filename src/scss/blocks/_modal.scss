@@ -1,5 +1,5 @@
 // Модальные окна
-.modal{
+.modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -7,12 +7,13 @@
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, .5);
-	overflow: hidden;
-	&-dialog{
+
+	&-dialog {
 		max-width: 380px;
 		margin: 50px auto;
 	}
-	&-content{
+
+	&-content {
 		padding: 50px 60px 70px 60px;
 		position: relative;
 		width: 100%;
@@ -20,16 +21,19 @@
 		border-radius: 15px;
 		box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
 	}
-	form{
+
+	form {
 		border: none;
 		display: flex;
 		flex-direction: column;
+
 		h2 {
 			font-weight: 700;
 			font-size: 24px;
 			color: $black;
 			padding-bottom: 5px;
 		}
+
 		label {
 			font-weight: 400;
 			font-size: 14px;
@@ -37,16 +41,19 @@
 			margin-bottom: 5px;
 		}
 	}
-	input, textarea{
+
+	input,
+	textarea {
 		position: relative;
 		font-weight: 400;
 		font-size: 14px;
 		color: $black;
-		padding: 12px 23px;	
+		padding: 12px 23px;
 		border-radius: 5px;
 		outline: none;
 		border: 1px solid $grey;
 		width: 100%;
+
 		// &:invalid {
 		// 	border: 2px solid red;
 		// 	&:after {
@@ -56,12 +63,13 @@
 		// 		right: 0;
 		// 	}
 		// }
-		&[type="password"]{
+		&[type="password"] {
 			font-size: 35px;
 			padding: 0 23px;
 		}
 	}
-	&-close{
+
+	&-close {
 		position: absolute;
 		top: 0;
 		right: 25px;
@@ -69,7 +77,8 @@
 		color: $grey;
 		cursor: pointer;
 	}
-	&-submit{
+
+	&-submit {
 		font-weight: 700;
 		font-size: 14px;
 		border-radius: 5px;
@@ -79,7 +88,8 @@
 		margin-top: 25px;
 		outline: none;
 	}
-	&-forgot{
+
+	&-forgot {
 		color: $grey;
 		margin-top: 15px;
 	}
@@ -91,24 +101,29 @@
 
 .modal.warning {
 	display: none;
-	.modal{
-		&-dialog{
+
+	.modal {
+		&-dialog {
 			width: 285px;
 		}
-		&-content{
+
+		&-content {
 			width: inherit;
 			padding: 50px 40px 40px 40px;
 		}
-		&-close{
+
+		&-close {
 			display: none;
 		}
 	}
-	p{
+
+	p {
 		font-weight: 600;
 		font-size: 14px;
 		margin-bottom: 10px;
 	}
-	button{
+
+	button {
 		width: 200px;
 		font-weight: 700;
 		font-size: 14px;
@@ -122,32 +137,91 @@
 
 .modal.recovery {
 	display: none;
-	p{
+
+	p {
 		font-weight: 400;
 		font-size: 14px;
 		margin-top: 15px;
 	}
 }
 
-.modal.registration{
+.modal.registration {
 	display: none;
-	.modal-content{
+
+	.modal-content {
 		padding-bottom: 35px;
 	}
-	p{
+
+	p {
 		font-weight: 400;
 		font-size: 10px;
 		margin-top: 10px;
-		a{
+
+		a {
 			color: $red;
 		}
 	}
 }
 
-.modal.feedback{
+.modal.feedback {
+	display: none;
+	.modal {
+		&-dialog {
+			max-width: 730px;
+		}
+	}
+}
+
+.sizes{
+	display: none;
 	.modal{
 		&-dialog{
-			max-width: 730px;
+			max-width: 80%;
+		}
+	}
+	&-boobs,
+	&-under-boobs,
+	&-thighs {
+		display: flex;
+		align-items: center;
+	}
+	form {
+		label {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			width: 250px;
+			font-weight: 700 !important;
+			font-size: 16px;
+		}
+	}
+	&-rezult{
+		display: flex;
+		background-color: $pink;
+		padding: 20px 50px;
+		border-radius: 10px;
+		margin: 30px 0;
+		p{
+			font-weight: 400;
+			font-size: 16px;
+			margin-right: 70px;
+			span{
+				font-weight: 700;
+				margin-left: 15px;
+			}
+		}
+	}
+	&-table{
+		display: grid;
+		grid-template-columns: 2.5fr repeat(9, 1fr);
+		grid-gap: 20px;
+		&-one{
+			font-weight: 700;
+			padding-left: 35px;
+			&:nth-child(1),
+			&:nth-child(11),
+			&:nth-child(21) {
+				padding-left: 0;
+			}
 		}
 	}
 }

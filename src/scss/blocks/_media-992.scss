@@ -1,0 +1,172 @@
+// media 1200
+@media(max-width: 992px) {
+	.header {
+		&-menu {
+			&-item {
+				a {
+					padding: 15px 20px;
+				}
+				&:first-child{
+					a{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.new {
+		&-item {
+			width: 25%;
+			padding: 10px;
+			border-radius: 15px;
+			&:hover {
+				transform: scaleX(1.1);
+				.new-item__hover {
+					transform: scaleX(0.93);
+				}
+			}
+		}
+	}
+	.news{
+		.container{
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&-item{
+			width: 49%;
+			&-img {
+				img {
+					width: auto;
+					height: 120px;
+				}
+			}
+			&-title{
+				flex: none;
+			}
+			&-big{
+				width: 49%;
+				flex-direction: column;
+				&-img{
+					order: 1;
+					img{
+						width: 100%;
+						height: 120px;
+						object-fit: cover;
+					}
+				}
+				&-text{
+					order: 2;
+					h3{
+						font-size: 18px;
+						order: 2;
+						padding-bottom: 20px;
+					}
+					&__dats{
+						order: 1;
+						padding: 15px 0;
+					}
+					&__description{
+						order: 3;
+						padding-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 860px){
+	.header{
+		&-top, &-bottom{
+			display: none;
+		}
+		&-middle{
+			.container{
+				flex-wrap: wrap;
+			}
+		}
+		&-menu-mob__open{
+			display: block;
+			position: absolute;
+			top: 30px;
+			left: 15px;
+		}
+		&-logo{
+			width: 100%;
+			text-align: center;
+			padding-bottom: 20px;
+		}
+		&-sex{
+			padding: 0;
+		}
+		&-search{
+			text-align: right;
+			.search{
+				display: none;
+			}
+			span{
+				display: inline-block;
+				position: relative;
+				top: 0;
+				right: 0;
+				opacity: 1;
+				img{
+					width: 24px;
+				}
+			}
+		}
+		&-order{
+			padding-left: 0;
+			a{
+				span:not(.header-order-basket__number) {
+					display: none;
+				}
+				.header-order-basket__number{
+					font-size: 10px;
+					height: 15px;
+					width: 15px;
+					right: 0;
+				}
+			}
+			&-profile{
+				order: 2;
+				padding-left: 23px;
+			}
+			&-postponed{
+				order: 1;
+			}
+			&-basket{
+				position: absolute;
+				top: 30px;
+				right: 15px;
+				order: 3;
+			}
+		}
+	}
+	.advantages{
+		.container{
+			flex-wrap: wrap;
+		}
+		&-item{
+			width: 50%;
+			margin-bottom: 10px;
+			p{
+				margin-left: 20px;
+			}
+		}
+	}
+	.footer{
+		&-middle{
+			&-logo{
+				img{
+					width: 100%;
+				}
+			}
+			&-card{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

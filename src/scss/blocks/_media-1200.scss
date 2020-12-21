@@ -1,0 +1,61 @@
+// media 1200
+@media(max-width: 1200px){
+	.main{
+		&-banner{
+			img{
+				height: 100%;
+				padding-bottom: 18px;
+			}
+		}
+	}
+	.news{
+		&-item{
+			&-img{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+	.footer{
+		.container{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+@media(max-width: 1120px) {
+	.hot {
+		&-collection {
+			display: none;
+		}
+		&-list{
+			padding-left: 0;
+		}
+		&-item {
+			width: 25%;
+			padding: 10px;
+			&-photo {
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 1080px){
+	.new{
+		&-item{
+			&:nth-child(5) {
+				display: none;
+			}
+			&-photo{
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

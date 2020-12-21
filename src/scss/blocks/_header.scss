@@ -3,6 +3,9 @@
 	.container {
 		align-items: center;
 	}
+	&-menu-mob__open{
+		display: none;
+	}
 	.header-top{
 		background-color: $black;
 		padding: 12px 0;
@@ -43,6 +46,7 @@
 	}
 	&-sex{
 		display: flex;
+		padding: 0 60px;
 		.woman{
 			padding-right: 45px;
 		}
@@ -58,13 +62,21 @@
 		}
 	}
 	&-search{
+		position: relative;
+		flex: 1;
 		.search{
 			border: 1px solid $grey;
 			border-radius: 5px;
 			font-size: 14px;
 			color: $grey;
-			padding: 14px 28px;
-			width: 380px;
+			padding: 14px 50px 14px 28px;
+			width: 100%;
+		}
+		span {
+			position: absolute;
+			top: 12px;
+			right: 15px;
+			opacity: 0.3;
 		}
 	}
 	&-order{
@@ -72,6 +84,7 @@
 		text-align: center;
 		justify-content: space-between;
 		align-items: flex-end;
+		padding-left: 30px;
 		a{
 			span{
 				color: $black;
