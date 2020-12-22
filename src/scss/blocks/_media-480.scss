@@ -86,4 +86,55 @@
 			}
 		}
 	}
+	.modal{
+		&-submit{
+			width: 100%;
+		}
+		&-dialog{
+			margin: 30px auto;
+		}
+		&-content{
+			padding: 30px 15px;
+			input, button{
+				width: 100%;
+			}
+		}
+		&-close{
+			font-size: 50px;
+			top: -5px;
+			right: 10px;
+		}
+	}
+	.warning{
+		.modal{
+			&-dialog {
+				width: 100%;
+			}
+			&-content {
+				padding: 30px 15px;
+			}
+			&-social-auth{
+				padding-top: 10px;
+			}
+		}
+	}
+	.recovery{
+		form{
+			h2{
+				word-wrap: normal;
+			}
+		}
+	}
+	.menu-mobile{
+		.modal{
+			&-content{
+				border-radius: 0;
+				border-bottom-right-radius: 20px;
+			}
+			&-dialog {
+				margin-top: 0;
+				margin-right: 40px;
+			}
+		}
+	}
 }
