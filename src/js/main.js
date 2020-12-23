@@ -50,7 +50,7 @@ let modalOverlay = document.querySelectorAll('.modal'),
 			// используя class, получаем объект всплывающего окна,
 			// которое мы собираемся открыть
 			modal = document.getElementById(modalId);
-
+			e.preventDefault();
 		// вызываем функцию открытия всплывающего окна, аргументом
 		// является объект всплывающего окна
 		modalShow(modal);

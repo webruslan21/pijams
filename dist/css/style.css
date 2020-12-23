@@ -1252,6 +1252,65 @@ template {
     .menu-mobile-social a {
       margin-right: 10px; }
 
+.catalog-categories-mobile {
+  display: none; }
+  .catalog-categories-mobile .modal-content {
+    padding: 30px 40px; }
+  .catalog-categories-mobile-item {
+    padding-top: 20px;
+    list-style-type: none; }
+    .catalog-categories-mobile-item a {
+      font-weight: 500;
+      color: #222222;
+      font-size: 18px;
+      text-decoration: none;
+      outline: none; }
+      .catalog-categories-mobile-item a:hover {
+        color: #EC3A87; }
+  .catalog-categories-mobile-submenu-list {
+    padding-left: 15px; }
+  .catalog-categories-mobile-submenu-item {
+    padding-top: 20px; }
+    .catalog-categories-mobile-submenu-item a {
+      color: #5F5F5F; }
+  .catalog-categories-mobile-sex {
+    display: flex; }
+    .catalog-categories-mobile-sex a {
+      color: #BCBCBC;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-right: 20px; }
+    .catalog-categories-mobile-sex .active a {
+      color: #222222;
+      font-size: 16px;
+      text-decoration: none; }
+  .catalog-categories-mobile-nav-item {
+    list-style-type: none;
+    padding-top: 30px; }
+    .catalog-categories-mobile-nav-item a {
+      font-weight: 700;
+      font-size: 18px;
+      color: #222222;
+      text-decoration: none; }
+  .catalog-categories-mobile-phone {
+    display: flex;
+    align-items: center;
+    margin-top: 30px; }
+    .catalog-categories-mobile-phone img {
+      width: 24px;
+      margin-right: 10px; }
+    .catalog-categories-mobile-phone a {
+      font-weight: 700;
+      font-weight: 700;
+      color: #222222;
+      font-size: 20px;
+      text-decoration: none; }
+  .catalog-categories-mobile-social {
+    margin-top: 30px; }
+    .catalog-categories-mobile-social a {
+      margin-right: 10px; }
+
 .show {
   display: block; }
 
