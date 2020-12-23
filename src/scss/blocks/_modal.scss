@@ -313,68 +313,6 @@
 	}
 }
 
-	&-sex {
-		display: flex;
-
-		a {
-			color: $grey;
-			font-size: 16px;
-			text-decoration: none;
-			font-weight: 700;
-			margin-right: 20px;
-		}
-
-		.active {
-			a {
-				color: $black;
-				font-size: 16px;
-				text-decoration: none;
-			}
-		}
-	}
-
-	&-nav {
-		&-item {
-			list-style-type: none;
-			padding-top: 30px;
-
-			a {
-				font-weight: 700;
-				font-size: 18px;
-				color: $black;
-				text-decoration: none;
-			}
-		}
-	}
-
-	&-phone {
-		display: flex;
-		align-items: center;
-		margin-top: 30px;
-
-		img {
-			width: 24px;
-			margin-right: 10px;
-		}
-
-		a {
-			font-weight: 700;
-			font-weight: 700;
-			color: $black;
-			font-size: 20px;
-			text-decoration: none;
-		}
-	}
-
-	&-social {
-		margin-top: 30px;
-
-		a {
-			margin-right: 10px;
-		}
-	}
-}
-
 .show {
 	display: block;
 }
