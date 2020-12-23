@@ -11,6 +11,40 @@
 		&-item{
 			width: 50%;
 		}
+		&-select{
+			display: none;
+		}
+		&-list{
+			width: 100%;
+		}
+	}
+	.breadcrumbs{
+		margin-top: 0;
+		.container{
+			flex-wrap: wrap;
+		}
+		&-list{
+			width: 100%;
+			p{
+				font-size: 12px;
+				a{
+					margin: 0 5px;
+				}
+			}
+		}
+		&-sort{
+			display: none;
+		}
+		&-categories, &-filter{
+			display: flex;
+			align-items: center;
+			margin-top: 15px;
+			span{
+				margin-left: 10px;
+				font-weight: 600;
+				font-size: 12px;
+			}
+		}
 	}
 	.hot{
 		&-item{
@@ -113,5 +147,9 @@
 				text-align: center;
 			}
 		}
+	}
+	.pagination{
+		width: 100%;
+		margin-left: 10px;
 	}
 }

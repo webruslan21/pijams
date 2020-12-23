@@ -564,6 +564,28 @@ template {
       width: 100%;
       border-radius: 25px; }
 
+.breadcrumbs {
+  margin-top: 30px;
+  margin-bottom: 10px; }
+  .breadcrumbs-list p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #BCBCBC; }
+    .breadcrumbs-list p a {
+      color: #BCBCBC;
+      text-decoration: none;
+      margin: 0 10px; }
+      .breadcrumbs-list p a:first-child {
+        margin-left: 0; }
+  .breadcrumbs-sort-list, .breadcrumbs-sort-item {
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 10px; }
+  .breadcrumbs-categories, .breadcrumbs-filter {
+    display: none; }
+
 .new-title {
   width: 100%; }
   .new-title h2 {
@@ -633,6 +655,92 @@ template {
         text-decoration: none;
         font-size: 14px;
         color: #BCBCBC; }
+
+.new-list {
+  width: 78%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.new-select {
+  width: 20%; }
+  .new-select a:hover {
+    color: #EC3A87; }
+  .new-select h3 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 30px; }
+    .new-select h3:first-child {
+      margin-top: 20px; }
+  .new-select-categories-item {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 15px; }
+    .new-select-categories-item a {
+      color: #222222;
+      text-decoration: none; }
+  .new-select-subcategories-item {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 15px; }
+    .new-select-subcategories-item:first-child {
+      margin-top: 15px; }
+    .new-select-subcategories-item:last-child {
+      margin-bottom: 15px; }
+    .new-select-subcategories-item a {
+      color: #5F5F5F;
+      text-decoration: none; }
+  .new-select-brand-list__all, .new-select-size-list__all {
+    text-decoration: none;
+    color: #EC3A87;
+    font-weight: 700;
+    font-size: 14px; }
+  .new-select-brand-item, .new-select-size-item {
+    list-style-type: none;
+    margin-bottom: 15px; }
+    .new-select-brand-item input[type="checkbox"], .new-select-size-item input[type="checkbox"] {
+      margin-right: 10px; }
+    .new-select-brand-item label, .new-select-size-item label {
+      font-weight: 500;
+      font-size: 14px; }
+  .new-select-money-size input[type="range"] {
+    width: 100%; }
+  .new-select-money-size__first, .new-select-money-size__last {
+    border-radius: 5px;
+    background-color: #F1F1F1;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    width: 49%;
+    margin-top: 10px; }
+
+.viewed {
+  margin-top: 40px;
+  margin-bottom: 50px; }
+
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .pagination .active {
+    color: #FFFFFF;
+    background-color: #EC3A87; }
+  .pagination a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #222222;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 10px; }
+    .pagination a:hover {
+      color: #222222;
+      background-color: #F1F1F1; }
+  .pagination .all {
+    color: #EC3A87;
+    background-color: #F1F1F1; }
 
 .sale-item {
   width: 100%;
@@ -1269,6 +1377,8 @@ template {
       top: 30px;
       right: 15px;
       order: 3; }
+  .new-select {
+    display: none; }
   .advantages .container {
     flex-wrap: wrap; }
   .advantages-item {
@@ -1288,6 +1398,30 @@ template {
     display: none; }
   .new-item {
     width: 50%; }
+  .new-select {
+    display: none; }
+  .new-list {
+    width: 100%; }
+  .breadcrumbs {
+    margin-top: 0; }
+    .breadcrumbs .container {
+      flex-wrap: wrap; }
+    .breadcrumbs-list {
+      width: 100%; }
+      .breadcrumbs-list p {
+        font-size: 12px; }
+        .breadcrumbs-list p a {
+          margin: 0 5px; }
+    .breadcrumbs-sort {
+      display: none; }
+    .breadcrumbs-categories, .breadcrumbs-filter {
+      display: flex;
+      align-items: center;
+      margin-top: 15px; }
+      .breadcrumbs-categories span, .breadcrumbs-filter span {
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 12px; }
   .hot-item {
     width: 50%; }
   .sale-item:last-child {
@@ -1344,7 +1478,10 @@ template {
   .footer-bottom .container {
     padding: 25px 0; }
   .footer-bottom p {
-    text-align: center; } }
+    text-align: center; }
+  .pagination {
+    width: 100%;
+    margin-left: 10px; } }
 
 @media (max-width: 480px) {
   .header-logo img {
