@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Контакты</title>
+	<title>Каталог</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');</style>
@@ -116,12 +116,563 @@
 			<div class="breadcrumbs-list">
 				<p><a href="#">Главная</a> > <a href="#">Женское</a> > <a href="#">Домашняя одежда</a></p>
 			</div>
+			<div class="breadcrumbs-sort">
+				<select name="" id="" class="breadcrumbs-sort-list">
+					<option value="" class="breadcrumbs-sort-item">Самые дешёвые</option>
+					<option value="" class="breadcrumbs-sort-item">Самые дорогие</option>
+					<option value="" class="breadcrumbs-sort-item">По популярности</option>
+					<option value="" class="breadcrumbs-sort-item">По умолчанию</option>
+				</select>
+			</div>
+			<div class="breadcrumbs-categories" data-modal="catalog-categories-mobile">
+				<img src="icons/categories-icon.svg" alt="">
+				<span>Категории</span>
+			</div>
+			<div class="breadcrumbs-filter" data-modal="catalog-filter">
+				<img src="icons/filter-icon.svg" alt="">
+				<span>Фильтры</span>
+			</div>
 		</div>
 	</section>
 
-	<section class="item-page">
+	<!-- Новинки -->
+	<section class="new">
 		<div class="container">
-			
+			<div class="new-select">
+				<h3>Категория</h3>
+				<ul class="new-select-categories-list">
+					<li class="new-select-categories-item"><a href="#">Купальники</a></li>
+					<li class="new-select-categories-item">
+						<a href="#">Домашняя одежда</a>
+						<ul class="new-select-subcategories-list">
+							<li class="new-select-subcategories-item"><a href="#">Костюмы</a></li>
+							<li class="new-select-subcategories-item"><a href="#">Платья</a></li>
+							<li class="new-select-subcategories-item"><a href="#">Пижамы</a></li>
+							<li class="new-select-subcategories-item"><a href="#">Халаты</a></li>
+							<li class="new-select-subcategories-item"><a href="#">Комбинезоны</a></li>
+						</ul>
+					</li>
+					<li class="new-select-categories-item"><a href="#">Эротическое бельё</a></li>
+					<li class="new-select-categories-item"><a href="#">Нижнее бельё</a></li>
+					<li class="new-select-categories-item"><a href="#">Большие размеры</a></li>
+					<li class="new-select-categories-item"><a href="#">Новинки</a></li>
+					<li class="new-select-categories-item"><a href="#">Распродажа</a></li>
+				</ul>
+				<h3>Бренды</h3>
+				<ul class="new-select-brand-list">
+					<li class="new-select-brand-item"><input type="checkbox"><label for="">Barmariska</label></li>
+					<li class="new-select-brand-item"><input type="checkbox"><label for="">MANDELEINE</label></li>
+					<li class="new-select-brand-item"><input type="checkbox"><label for="">Gorolla</label></li>
+					<li class="new-select-brand-item"><input type="checkbox"><label for="">Твоё</label></li>
+					<li class="new-select-brand-item"><input type="checkbox"><label for="">Gerasim</label></li>
+					<a href="#" class="new-select-brand-list__all">развернуть</a>
+				</ul>
+				<h3>Размер</h3>
+				<ul class="new-select-size-list">
+					<li class="new-select-size-item"><input type="checkbox"><label for="">XS</label></li>
+					<li class="new-select-size-item"><input type="checkbox"><label for="">S</label></li>
+					<li class="new-select-size-item"><input type="checkbox"><label for="">M</label></li>
+					<li class="new-select-size-item"><input type="checkbox"><label for="">L</label></li>
+					<li class="new-select-size-item"><input type="checkbox"><label for="">XL</label></li>
+				</ul>
+				<h3>Цена</h3>
+				<div class="new-select-money-size">
+					<input type="range" name="" id="">
+					<input type="text" class="new-select-money-size__first" placeholder="от">
+					<input type="text" class="new-select-money-size__last" placeholder="до">
+				</div>
+			</div>
+			<div class="new-list">
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-1.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount">-20%</span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s>1499 ₽</s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-2.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-3.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-4.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-item">
+					<div class="new-item__hover">
+						<div class="new-item-photo">
+							<img src="img/new/new-img-5.jpg" alt="image">
+							<span class="new-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="new-item__discount"></span>
+						</div>
+						<div class="new-item-description">
+							<div class="new-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="new-item-description-categories">
+								<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#" class="all">Далее</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Хиты продаж -->
+	<section class="new">
+		<div class="container">
+			<div class="new-title">
+				<h2>Хиты продаж</h2>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-1.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount">-20%</span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s>1499 ₽</s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-2.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-3.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-4.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-5.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Вы смотрели -->
+	<section class="new viewed">
+		<div class="container">
+			<div class="new-title">
+				<h2>Вы смотрели</h2>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-1.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount">-20%</span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s>1499 ₽</s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-2.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-3.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-4.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-5.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 

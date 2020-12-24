@@ -73,6 +73,14 @@
 			}
 		}
 	}
+	.error {
+		&-item {
+			width: 100%;
+			&:first-child {
+				display: none;
+			}
+		}
+	}
 }
 
 @media(max-width: 860px){

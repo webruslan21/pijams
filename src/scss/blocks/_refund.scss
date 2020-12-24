@@ -1,0 +1,35 @@
+.refund{
+	.container{
+		flex-direction: column;
+	}
+	h2{
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+	h3{
+		font-weight: 700;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	p{
+		font-weight: 400;
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+	&-wanted{
+		background-color: $pink;
+		padding: 10px 20px;
+		border-radius: 14px;
+		display: flex;
+		align-items: center;
+		span{
+			background-color: $red;
+			display: inline-block;
+			padding: 1px 8px;
+			border-radius: 10px;
+			color: $white;
+			margin-right: 10px;
+		}
+	}
+}
