@@ -41,6 +41,12 @@ gulp.task("copy-assets", () => {
 
   gulp.src("./src/fonts/**/*.*")
     .pipe(gulp.dest(dist + "/fonts"));
+  
+  gulp.src("./src/css/**/*.*")
+    .pipe(gulp.dest(dist + "/css"));
+  
+  gulp.src("./src/js/**/*.*")
+    .pipe(gulp.dest(dist + "/js/libs"));
 
   return gulp.src("./src/img/**/*.*")
     .pipe(gulp.dest(dist + "/img"))

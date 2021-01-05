@@ -268,4 +268,90 @@
 			}
 		}
 	}
+	.product{
+		&-images{
+			max-width: 100%;
+		}
+		&-slider{
+			height: 500px;
+		}
+		&-thumbs{
+			height: 150px;
+		}
+		&-info{
+			width: 100%;
+			h1{
+				font-size: 20px;
+			}
+			&-code{
+				font-size: 12px;
+			}
+			&-money{
+				margin-top: 10px;
+			}
+			&-color{
+				margin-top: 10px;
+			}
+			h3{
+				margin-top: 15px;
+			}
+			&-size{
+				label{
+					padding: 14px 20px;
+				}
+			}
+			&-table{
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+	.feedback{
+		margin-top: 10px;
+		h2{
+			display: none;
+		}
+		&-amount{
+			margin-top: 0;
+			&-star{
+				justify-content: space-around;
+				padding: 15px 20px;
+				margin-bottom: 0;
+				border: 1px solid $lightGrey;
+				border-radius: 5px;
+				&-volume{
+					display: none;
+				}
+				&-all{
+					display: flex;
+					align-items: center;
+					font-weight: 700;
+					font-size: 14px;
+					color: $black;
+					margin-left: 30px;
+					img{
+						width: 8px;
+						margin-left: 10px;
+						filter: brightness(0%);
+						transform: rotate(-90deg);
+						margin-left: 10px;
+					}
+				}
+			}
+			&-item{
+				display: none;
+			}
+			&-btn{
+				margin-top: 20px;
+			}
+		}
+		&-text{
+			margin-top: 0;
+			margin-right: 0;
+		}
+		&-all{
+			a{
+				margin: 25px auto 30px auto;
+			}
+		}
+	}
 }

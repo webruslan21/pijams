@@ -42,17 +42,10 @@ let modalOverlay = document.querySelectorAll('.modal'),
 		modalStatus = false;
 
 [].forEach.call(modalOpen, function (el) {
-	// вешаем обработчик события на каждый элемент коллекции
 	el.addEventListener('click', function (e) {
-		// получаем значение атрибута ['data-modal'], которое
-		// является class всплывающего окна
 		var modalId = el.getAttribute('data-modal'),
-			// используя class, получаем объект всплывающего окна,
-			// которое мы собираемся открыть
 			modal = document.getElementById(modalId);
 			e.preventDefault();
-		// вызываем функцию открытия всплывающего окна, аргументом
-		// является объект всплывающего окна
 		modalShow(modal);
 	});
 });
@@ -62,7 +55,6 @@ let modalOverlay = document.querySelectorAll('.modal'),
 });
 
 function modalShow(modal) {
-	// показываем подложку всплывающего окна
 	modalCloseFunc();
 	modal.classList.add('show');
 	document.body.style.overflow = 'hidden';
@@ -70,19 +62,11 @@ function modalShow(modal) {
 }
 
 function modalCloseFunc() {
-	// проверяем выполнение условия
 	if (modalStatus && (!event.keyCode || event.keyCode === 27)) {
-		// собираем коллекцию объектов всех всплывающих окон на странице
-		// обходим по очереди каждый элемент коллекции (каждое всплывающее окно)
-		// и в зависимости от типа анимации, используемой на данной странице,
-		// удаляем класс анимации открытия окна и добавляем класс анимации закрытия
 		[].forEach.call(modalOverlay, function (modal) {
 			modal.classList.remove('show');
 			document.body.style.overflow = '';
 		});
-		// сбрасываем флаг, устанавливая его значение в 'false'
-		// это значение указывает нам, что на странице нет открытых
-		// всплывающих окон
 		modalStatus = false;
 	}
 }

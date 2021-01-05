@@ -399,6 +399,8 @@ template {
 	background-color: $red;
 	color: $white;
 	outline: none;
+	border: none;
+	border-radius: 5px;
 	&:hover {
 		background-color: $red-hover;
 	}
@@ -410,6 +412,9 @@ template {
 .btn-black {
 	background-color: $black;
 	color: $white;
+	outline: none;
+	border: none;
+	border-radius: 5px;
 	&:hover {
 		background-color: $black-hover;
 	}
@@ -421,6 +426,9 @@ template {
 .btn-pink {
 	background-color: $pink;
 	color: $black;
+	outline: none;
+	border: none;
+	border-radius: 5px;
 	&:hover {
 		background-color: $pink-hover;
 	}

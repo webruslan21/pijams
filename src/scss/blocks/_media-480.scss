@@ -137,4 +137,17 @@
 			}
 		}
 	}
+	.product{
+		padding-top: 10px;
+		&-slider{
+			height: 290px;
+		}
+		&-thumbs{
+			height: 90px;
+			margin-top: 10px;
+		}
+		h1{
+			margin-top: 15px;
+		}
+	}
 }
