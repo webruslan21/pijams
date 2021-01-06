@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Страница товара</title>
+	<title>Корзина</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');</style>
 </head>
 <body>
@@ -34,13 +34,13 @@
 					<img src="icons/menu-mob-icon.svg" alt="">
 				</div>
 				<div class="header-logo">
-					<a href="home.html">
+					<a href="#">
 						<img src="icons/logo.svg" alt="">
 					</a>
 				</div>
 				<div class="header-sex">
 					<div class="woman active">
-						<a href="index.html">Женское</a>
+						<a href="#">Женское</a>
 					</div>
 					<div class="man">
 						<a href="#">Мужское</a>
@@ -109,7 +109,7 @@
 			</div>
 		</div>
 	</header>
-
+	
 	<!-- Хлебные крошки -->
 	<section class="breadcrumbs">
 		<div class="container">
@@ -119,398 +119,89 @@
 		</div>
 	</section>
 
-	<section class="product">
+	<!-- Корзина -->
+	<section class="basket">
 		<div class="container">
-			<div class="product-images">
-				<div class="swiper-container product-thumbs">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-2.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-3.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-4.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
+			<h1>Корзина</h1>
+			<div class="basket-product">
+				<div class="basket-product-item">
+					<div class="basket-product-item-img">
+						<img src="img/new/new-img-1.jpg" alt="">
+						<span class="basket-product-item-discount">-20%</span>
+					</div>
+					<div class="basket-product-item-title">
+						<h3><a href="#">Пижама со звездочками - майка <br> на пуговицах с брюками</a></h3>
+						<span>Размер: М</span>
+					</div>
+					<div class="basket-product-item-sum">
+						<span class="basket-product-item-sum__minus">-</span>
+						<input type="number" value="2">
+						<span class="basket-product-item-sum__plus">+</span>
+					</div>
+					<div class="basket-product-item-price">
+						<span class="basket-product-item-price__new">899 ₽</span>
+						<span class="basket-product-item-price__old">1499 ₽</span>
+					</div>
+					<div class="basket-product-item-delete">
+						<span>&times;</span>
 					</div>
 				</div>
-				<div class="swiper-container product-slider">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-2.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-3.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-4.jpg" alt=""></div>
-						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
+				<div class="basket-product-item">
+					<div class="basket-product-item-img">
+						<img src="img/new/new-img-2.jpg" alt="">
+					</div>
+					<div class="basket-product-item-title">
+						<h3><a href="#">Пижама со звездочками - майка <br> на пуговицах с брюками</a></h3>
+						<span>Размер: М</span>
+					</div>
+					<div class="basket-product-item-sum">
+						<span class="basket-product-item-sum__minus">-</span>
+						<input type="number" value="2">
+						<span class="basket-product-item-sum__plus">+</span>
+					</div>
+					<div class="basket-product-item-price">
+						<span class="basket-product-item-price__new">1899 ₽</span>
+					</div>
+					<div class="basket-product-item-delete">
+						<span>&times;</span>
+					</div>
+				</div>
+				<div class="basket-product-item">
+					<div class="basket-product-item-img">
+						<img src="img/new/new-img-3.jpg" alt="">
+						<span class="basket-product-item-discount">-20%</span>
+					</div>
+					<div class="basket-product-item-title">
+						<h3><a href="#">Пижама со звездочками - майка <br> на пуговицах с брюками</a></h3>
+						<span>Размер: М</span>
+					</div>
+					<div class="basket-product-item-sum">
+						<span class="basket-product-item-sum__minus">-</span>
+						<input type="number" value="2">
+						<span class="basket-product-item-sum__plus">+</span>
+					</div>
+					<div class="basket-product-item-price">
+						<span class="basket-product-item-price__new">899 ₽</span>
+						<span class="basket-product-item-price__old">1499 ₽</span>
+					</div>
+					<div class="basket-product-item-delete">
+						<span>&times;</span>
 					</div>
 				</div>
 			</div>
-			<div class="product-info">
-				<h1>Пижама со звездами - майка на пуговицах с брюками</h1>
-				<p class="product-info-code">Код товара: 171737757</p>
-				<div class="product-info-star">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-				</div>
-				<p class="product-info-money">899 ₽<span>  1499 ₽  </span></p>
-				<p class="product-info-color">Цвет: <span>черный</span></p>
-				<p class="product-info-size-title">Выберите размер:</p>
-				<div class="product-info-size">
-					<input type="radio" name="product-info-size" id="product-info-size__s" value="S" checked>
-					<label for="product-info-size__s">S</label>
-					<input type="radio" name="product-info-size" id="product-info-size__m" value="M">
-					<label for="product-info-size__m">M</label>
-					<input type="radio" name="product-info-size" id="product-info-size__l" value="L">
-					<label for="product-info-size__l">L</label>
-					<input type="radio" name="product-info-size" id="product-info-size__xl" value="XL">
-					<label for="product-info-size__xl">XL</label>
-				</div>
-				<div class="product-info-add">
-					<button class="product-info-add-basket btn-black">Добавить в корзину</button>
-					<button class="product-info-add-postponed"><img src="icons/heart-icon.svg" alt=""></button>
-				</div>
-				<a class="product-info-sizes-button"><img src="icons/sizes-icon.svg" alt=""> <span>Таблица размеров</span></a>
-				<h3>О товаре</h3>
-				<div class="product-info-table">
-					<div>Премиум качество</div>
-					<div>&#10004;</div>
-					<div>Сертификат EAC</div>
-					<div>&#10004;</div>
-					<div>Материал</div>
-					<div>100% хлопок</div>
-					<div>Коллекция</div>
-					<div>Лето 2020</div>
-					<div>Производитель</div>
-					<div>Tezenis</div>
-				</div>
+			<div class="basket-total">
+				<h2>Ваша корзина</h2>
+				<p class="basket-total-bodytag"><span>Товары</span><span>2300 ₽</span></p>
+				<p class="basket-total-bodytag"><span>Скидка</span><span>300 ₽</span></p>
+				<p class="basket-total-sum">Итого:<span>2999 ₽</span></p>
+				<input class="basket-total-promocode" type="text" placeholder="Введите промокод">
+				<button class="basket-total-order">Оформить заказ</button>
+				<a href="#" class="basket-total-clear">очистить корзину</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="feedback">
-		<div class="container">
-			<h2>Отзывы о товаре <span>3</span></h2>
-			<div class="feedback-text">
-				<div class="feedback-text-item">
-					<div class="feedback-text-item-star">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-					</div>
-					<div class="feedback-text-item-name">
-						<p>Ирина С.</p>
-					</div>
-					<div class="feedback-text-item-description">
-						<p>Худи супер, после ручной стирки проблем нет, при носке есть катышки с внутренней стороны , но это видно только на темных вещах и то не ко всем липнет, теплое, на 44-46 размер S сидит как оверсайз, но не огромный, прикрывает попу, то что нужно. Цвет очень красивый, нежный, больше по описанию зеленая пастель , чем болотный . Рекомендую к покупке 👍</p>
-					</div>
-				</div>
-				<div class="feedback-text-item">
-					<div class="feedback-text-item-star">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-					</div>
-					<div class="feedback-text-item-name">
-						<p>Алёна В.</p>
-					</div>
-					<div class="feedback-text-item-description">
-						<p>Худи супер, после ручной стирки проблем нет, при носке есть катышки с внутренней стороны , но это видно только на темных вещах и то не ко всем липнет, теплое, на 44-46 размер S сидит как оверсайз, но не огромный, прикрывает попу, то что нужно. Цвет очень красивый, нежный, больше по описанию зеленая пастель , чем болотный . Рекомендую к покупке 👍</p>
-					</div>
-				</div>
-				<div class="feedback-text-item">
-					<div class="feedback-text-item-star">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-						<img src="icons/star-icon.svg" alt="">
-					</div>
-					<div class="feedback-text-item-name">
-						<p>Светлана А.</p>
-					</div>
-					<div class="feedback-text-item-description">
-						<p>Худи супер, после ручной стирки проблем нет, при носке есть катышки с внутренней стороны , но это видно только на темных вещах и то не ко всем липнет, теплое, на 44-46 размер S сидит как оверсайз, но не огромный, прикрывает попу, то что нужно. Цвет очень красивый, нежный, больше по описанию зеленая пастель , чем болотный . Рекомендую к покупке 👍</p>
-					</div>
-				</div>
-			</div>
-			<div class="feedback-amount">
-				<div class="feedback-amount-star">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-					<img src="icons/star-icon.svg" alt="">
-					<span class="feedback-amount-star-volume">4.5 / 5</span>
-					<span class="feedback-amount-star-all">Отзывы <img src="icons/arrow-link-icon.svg"></span>
-				</div>
-				<div class="feedback-amount-item">
-					<span class="feedback-amount-item-star">5 звёзд</span>
-					<div class="feedback-amount-item-bar"></div>
-					<span class="feedback-amount-item-amount">55</span>
-				</div>
-				<div class="feedback-amount-item">
-					<span class="feedback-amount-item-star">4 звезды</span>
-					<div class="feedback-amount-item-bar"></div>
-					<span class="feedback-amount-item-amount">8</span>
-				</div>
-				<div class="feedback-amount-item">
-					<span class="feedback-amount-item-star">3 звезды</span>
-					<div class="feedback-amount-item-bar"></div>
-					<span class="feedback-amount-item-amount">0</span>
-				</div>
-				<div class="feedback-amount-item">
-					<span class="feedback-amount-item-star">2 звезды</span>
-					<div class="feedback-amount-item-bar"></div>
-					<span class="feedback-amount-item-amount">0</span>
-				</div>
-				<div class="feedback-amount-item">
-					<span class="feedback-amount-item-star">1 звезда</span>
-					<div class="feedback-amount-item-bar"></div>
-					<span class="feedback-amount-item-amount">0</span>
-				</div>
-				<button class="feedback-amount-btn btn-pink">Написать отзыв</button>
-			</div>
-			<div class="feedback-all">
-				<a href="#">
-					показать ещё 
-					<img src="icons/arrow-link-icon.svg"class="feedback-all-link">
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<!-- Похожие товары -->
-	<section class="new">
-		<div class="container">
-			<div class="new-title">
-				<h2>Похожие товары</h2>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-1.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount">-20%</span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s>1499 ₽</s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-2.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-3.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-4.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-5.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Вы смотрели -->
-	<section class="new viewed">
-		<div class="container">
-			<div class="new-title">
-				<h2>Вы смотрели</h2>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-1.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount">-20%</span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s>1499 ₽</s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-2.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-3.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-4.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="new-item">
-				<div class="new-item__hover">
-					<div class="new-item-photo">
-						<img src="img/new/new-img-5.jpg" alt="image">
-						<span class="new-item__like">
-							<img src="icons/like-icon.svg" alt="">
-						</span>
-						<span class="new-item__discount"></span>
-					</div>
-					<div class="new-item-description">
-						<div class="new-item-description-price">
-							<span>899 ₽</span>
-							<s></s>
-						</div>
-						<div class="new-item-description-categories">
-							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
-							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-		<!-- Подписаться -->
+	<!-- Подписаться -->
 	<section class="subscribe">
 		<div class="container">
 			<form action="">
@@ -577,6 +268,7 @@
 	</footer>
 
 	<!-- Модальные окна -->
+
 	<!-- Окно входа -->
 	<div class="modal auth" id="auth">
 		<div class="modal-dialog">
@@ -914,130 +606,9 @@
 		</div>
 	</div>
 
-	<!-- Каталог-категории мобильная версия -->
-	<div class="modal menu-mobile" id="catalog-categories-mobile">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-close" data-close>&times;</div>
-				<div class="menu-mobile-sex">
-					<div class="woman active">
-						<a href="#">Женское</a>
-					</div>
-					<div class="man">
-						<a href="#">Мужское</a>
-					</div>
-				</div>
-				<ul class="menu-mobile-list">
-					<li class="menu-mobile-item"><a href="#">Купальники</a></li>
-					<li class="menu-mobile-item">
-						<a href="#">Домашняя одежда</a>
-						<ul class="menu-mobile-submenu-list">
-							<div class="menu-mobile-submenu-item"><a href="#">Костюмы</a></div>
-							<div class="menu-mobile-submenu-item"><a href="#">Платья</a></div>
-							<div class="menu-mobile-submenu-item"><a href="#">Пижамы</a></div>
-							<div class="menu-mobile-submenu-item"><a href="#">Халаты</a></div>
-							<div class="menu-mobile-submenu-item"><a href="#">Комбинезоны</a></div>
-						</ul>
-					</li>
-					<li class="menu-mobile-item"><a href="#">Эротическое бельё</a></li>
-					<li class="menu-mobile-item"><a href="#">Нижнее бельё</a></li>
-					<li class="menu-mobile-item"><a href="#">Большие размеры</a></li>
-					<li class="menu-mobile-item"><a href="#">Новинки</a></li>
-					<li class="menu-mobile-item"><a href="#">Распродажа</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<!-- Каталог-фильтр мобильная версия -->
-	<div class="modal catalog-filter" id="catalog-filter">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-close" data-close>&times;</div>
-					<div class="catalog-filter-sort">
-					<select name="" id="" class="breadcrumbs-sort-list">
-						<option value="" class="breadcrumbs-sort-item">Самые дешёвые</option>
-						<option value="" class="breadcrumbs-sort-item">Самые дорогие</option>
-						<option value="" class="breadcrumbs-sort-item">По популярности</option>
-						<option value="" class="breadcrumbs-sort-item">По умолчанию</option>
-					</select>
-				</div>
-				<h3>Бренды</h3>
-				<ul class="catalog-filter-brand-list">
-					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Barmariska</label></li>
-					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">MANDELEINE</label></li>
-					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Gorolla</label></li>
-					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Твоё</label></li>
-					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Gerasim</label></li>
-					<a href="#" class="catalog-filter-brand-list__all">развернуть</a>
-				</ul>
-				<h3>Размер</h3>
-				<ul class="catalog-filter-size-list">
-					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">XS</label></li>
-					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">S</label></li>
-					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">M</label></li>
-					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">L</label></li>
-					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">XL</label></li>
-				</ul>
-				<h3>Цена</h3>
-				<div class="catalog-filter-money-size">
-					<input type="range" name="" id="">
-					<input type="text" class="catalog-filter-money-size__first" placeholder="от">
-					<input type="text" class="catalog-filter-money-size__last" placeholder="до">
-				</div>
-				<button class="btn-red">Показать</button>
-			</div>
-		</div>
-	</div>
-
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		var tovarThumbs = new Swiper('.product-thumbs', {
-			direction: 'vertical',
-			spaceBetween: 20,
-      slidesPerView: 4,
-      loop: true,
-      freeMode: true,
-      loopedSlides: 1, //looped slides should be the same
-      watchSlidesVisibility: true,
-			watchSlidesProgress: true,
-			breakpoints: {
-				992: {
-					direction: 'vertical',
-					slidesPerView: 4,
-				},
-				480: {
-					direction: 'horizontal',
-					slidesPerView: 3,
-				},
-				0: {
-					direction: 'horizontal',
-					slidesPerView: 3,
-					spaceBetween: 10,
-				},
-			}
-		});
-		var tovarSlider = new Swiper('.product-slider', {
-			direction: 'vertical',
-  		loop: true,
-			slidesPerView: 1,
-			thumbs: {
-        swiper: tovarThumbs,
-			},
-			breakpoints: {
-				992: {
-					direction: 'vertical',
-					slidesPerView: 1,
-				},
-				0: {
-					direction: 'horizontal',
-					slidesPerView: 1,
-				},
-			}
-		});
-	</script>
 </body>
 </html>

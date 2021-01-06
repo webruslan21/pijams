@@ -271,6 +271,9 @@
 	.product{
 		&-images{
 			max-width: 100%;
+			&__discount{
+				padding: 3px 10px;
+			}
 		}
 		&-slider{
 			height: 500px;
@@ -352,6 +355,53 @@
 			a{
 				margin: 25px auto 30px auto;
 			}
+		}
+	}
+	.basket{
+		h1{
+			display: none;
+		}
+		&-product{
+			&-item{
+				position: relative;
+				padding-right: 0;
+				&-title{
+					position: absolute;
+					top: 20px;
+					bottom: 20px;
+					left: 150px;
+					height: 100%;
+					h3{
+						margin-right: 25px;
+						a{
+							font-size: 14px;
+							margin-bottom: 70px;
+						}
+						br{
+							display: none;
+						}
+					}
+				}
+				&-sum{
+					position: absolute;
+					top: 50%;
+					left: 150px;
+					transform: translateY(-50%);
+				}
+				&-price {
+					position: absolute;
+					bottom: 25px;
+					right: 0;
+				}
+				&-delete{
+					position: absolute;
+					top: 5px;
+					right: 0;
+				}
+			}
+		}
+		&-total{
+			margin-left: 0;
 		}
 	}
 }

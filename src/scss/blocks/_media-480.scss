@@ -150,4 +150,45 @@
 			margin-top: 15px;
 		}
 	}
+	.basket{
+		&-product{
+			&-item{
+				&-img{
+					width: 90px;
+					height: 90px;
+				}
+				&-title{
+					left: 110px;
+					margin-left: 0;
+					h3{
+						a {
+							font-size: 12px;
+							margin-bottom: 70px;
+							margin-bottom: 45px;
+						}
+					}
+					span{
+						background: none;
+						padding: 0;
+					}
+				}
+				&-sum{
+					left: 110px;
+					top: 60%;
+					input{
+						margin: 5px;
+					}
+				}
+				&-price{
+					bottom: 20px;
+				}
+				&-delete{
+					top: 0;
+				}
+			}
+		}
+		&-total{
+			padding: 30px; 
+		}
+	}
 }

@@ -1,0 +1,31 @@
+@media(max-width: 375px){
+	.basket{
+		&-product{
+			&-item{
+				&-title{
+					h3{
+						a{
+							margin-bottom: 45px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 345px) {
+	.basket {
+		&-product {
+			&-item {
+				&-title {
+					h3 {
+						a {
+							margin-bottom: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

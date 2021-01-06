@@ -4,9 +4,22 @@
 		width: 80%;
 	}
 	&-images{
+		position: relative;
 		display: flex;
 		max-width: 50%;
 		margin-right: 30px;
+		&__discount{
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 99;
+			font-weight: 700;
+			font-size: 14px;
+			color: $white;
+			background-color: $red;
+			padding: 5px 15px;
+			border-bottom-left-radius: 10px;
+		}
 	}
 	&-slider{
 		width: 100%;

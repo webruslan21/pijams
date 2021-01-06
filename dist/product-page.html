@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Страница товара</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');</style>
+</head>
+<body>
+		
+	<!-- Шапка -->
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="header-nav">
+					<ul class="header-nav-list">
+						<li class="header-nav-item"><a href="#">Доставка и оплата</a></li>
+						<li class="header-nav-item"><a href="#">Контакты</a></li>
+						<li class="header-nav-item"><a href="#">Обмен и возврат</a></li>
+						<li class="header-nav-item"><a href="#">Новости</a></li>
+					</ul>
+				</div>
+				<div class="header-phone">
+					<img src="icons/phone-icon.svg" alt="">
+					<a href="#"><span>8 800 555-35-35</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="container">
+				<div class="header-menu-mob__open" data-modal="menu-mobile">
+					<img src="icons/menu-mob-icon.svg" alt="">
+				</div>
+				<div class="header-logo">
+					<a href="home.html">
+						<img src="icons/logo.svg" alt="">
+					</a>
+				</div>
+				<div class="header-sex">
+					<div class="woman active">
+						<a href="index.html">Женское</a>
+					</div>
+					<div class="man">
+						<a href="#">Мужское</a>
+					</div>
+				</div>
+				<div class="header-search">
+					<input type="text" class="search" placeholder="Я ищу...">
+					<span><img src="icons/search-icon.svg" alt=""></span>
+				</div>
+				<div class="header-order">
+					<div class="header-order-profile" data-modal="warning">
+						<a href="#">
+							<img src="icons/user-icon.svg" alt=""><br>
+							<span>Профиль</span>
+						</a>
+					</div>
+					<div class="header-order-postponed">
+						<a href="#">
+							<img src="icons/heart-icon.svg" alt=""><br>
+							<span>Отложено</span>
+						</a>
+					</div>
+					<div class="header-order-basket">
+						<a href="#">
+							<img src="icons/basket-icon.svg" alt=""><br>
+							<span>Корзина</span>
+							<span class="header-order-basket__number">1</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-menu">
+					<ul class="header-menu-list">
+						<li class="header-menu-item"><a href="#">Купальники</a></li>
+						<li class="header-menu-item">
+							<a href="#">Домашняя одежда</a>
+							<ul class="header-submenu-list">
+								<li class="header-submenu-item"><a href="#">Новинки 2020</a></li>
+								<li class="header-submenu-item"><a href="#">Верх купальника</a></li>
+								<li class="header-submenu-item"><a href="#">Плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Минибикини</a></li>
+								<li class="header-submenu-item"><a href="#">Бермуды и плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Слитные купальники</a></li>
+								<li class="header-submenu-item"><a href="#">Раздельные купальники</a></li>
+							</ul>
+						</li>
+						<li class="header-menu-item">
+							<a href="#">Эротическое бельё</a>
+							<ul class="header-submenu-list">
+								<li class="header-submenu-item"><a href="#">Новинки 2020</a></li>
+								<li class="header-submenu-item"><a href="#">Верх купальника</a></li>
+								<li class="header-submenu-item"><a href="#">Плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Минибикини</a></li>
+								<li class="header-submenu-item"><a href="#">Бермуды и плавки</a></li>
+								<li class="header-submenu-item"><a href="#">Слитные купальники</a></li>
+								<li class="header-submenu-item"><a href="#">Раздельные купальники</a></li>
+							</ul>
+						</li>
+						<li class="header-menu-item"><a href="#">Нижнее бельё</a></li>
+						<li class="header-menu-item"><a href="#">Большие размеры</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Хлебные крошки -->
+	<section class="breadcrumbs">
+		<div class="container">
+			<div class="breadcrumbs-list">
+				<p><a href="#">Главная</a> > <a href="#">Женское</a> > <a href="#">Домашняя одежда</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="product">
+		<div class="container">
+			<div class="product-images">
+				<div class="swiper-container product-thumbs">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-3.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-4.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
+					</div>
+				</div>
+				<div class="swiper-container product-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-3.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-4.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/product/product-image-1.jpg" alt=""></div>
+						<span class="product-images__discount">-20%</span>
+					</div>
+				</div>
+			</div>
+			<div class="product-info">
+				<h1>Пижама со звездами - майка на пуговицах с брюками</h1>
+				<p class="product-info-code">Код товара: 171737757</p>
+				<div class="product-info-star">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+				</div>
+				<p class="product-info-money">899 ₽<span>  1499 ₽  </span></p>
+				<p class="product-info-color">Цвет: <span>черный</span></p>
+				<p class="product-info-size-title">Выберите размер:</p>
+				<div class="product-info-size">
+					<input type="radio" name="product-info-size" id="product-info-size__s" value="S" checked>
+					<label for="product-info-size__s">S</label>
+					<input type="radio" name="product-info-size" id="product-info-size__m" value="M">
+					<label for="product-info-size__m">M</label>
+					<input type="radio" name="product-info-size" id="product-info-size__l" value="L">
+					<label for="product-info-size__l">L</label>
+					<input type="radio" name="product-info-size" id="product-info-size__xl" value="XL">
+					<label for="product-info-size__xl">XL</label>
+				</div>
+				<div class="product-info-add">
+					<button class="product-info-add-basket btn-black">Добавить в корзину</button>
+					<button class="product-info-add-postponed"><img src="icons/heart-icon.svg" alt=""></button>
+				</div>
+				<a class="product-info-sizes-button"><img src="icons/sizes-icon.svg" alt=""> <span>Таблица размеров</span></a>
+				<h3>О товаре</h3>
+				<div class="product-info-table">
+					<div>Премиум качество</div>
+					<div>&#10004;</div>
+					<div>Сертификат EAC</div>
+					<div>&#10004;</div>
+					<div>Материал</div>
+					<div>100% хлопок</div>
+					<div>Коллекция</div>
+					<div>Лето 2020</div>
+					<div>Производитель</div>
+					<div>Tezenis</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="feedback">
+		<div class="container">
+			<h2>Отзывы о товаре <span>3</span></h2>
+			<div class="feedback-text">
+				<div class="feedback-text-item">
+					<div class="feedback-text-item-star">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+					</div>
+					<div class="feedback-text-item-name">
+						<p>Ирина С.</p>
+					</div>
+					<div class="feedback-text-item-description">
+						<p>Худи супер, после ручной стирки проблем нет, при носке есть катышки с внутренней стороны , но это видно только на темных вещах и то не ко всем липнет, теплое, на 44-46 размер S сидит как оверсайз, но не огромный, прикрывает попу, то что нужно. Цвет очень красивый, нежный, больше по описанию зеленая пастель , чем болотный . Рекомендую к покупке 👍</p>
+					</div>
+				</div>
+				<div class="feedback-text-item">
+					<div class="feedback-text-item-star">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+					</div>
+					<div class="feedback-text-item-name">
+						<p>Алёна В.</p>
+					</div>
+					<div class="feedback-text-item-description">
+						<p>Худи супер, после ручной стирки проблем нет, при носке есть катышки с внутренней стороны , но это видно только на темных вещах и то не ко всем липнет, теплое, на 44-46 размер S сидит как оверсайз, но не огромный, прикрывает попу, то что нужно. Цвет очень красивый, нежный, больше по описанию зеленая пастель , чем болотный . Рекомендую к покупке 👍</p>
+					</div>
+				</div>
+				<div class="feedback-text-item">
+					<div class="feedback-text-item-star">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+					</div>
+					<div class="feedback-text-item-name">
+						<p>Светлана А.</p>
+					</div>
+					<div class="feedback-text-item-description">
+						<p>Худи супер, после ручной стирки проблем нет, при носке есть катышки с внутренней стороны , но это видно только на темных вещах и то не ко всем липнет, теплое, на 44-46 размер S сидит как оверсайз, но не огромный, прикрывает попу, то что нужно. Цвет очень красивый, нежный, больше по описанию зеленая пастель , чем болотный . Рекомендую к покупке 👍</p>
+					</div>
+				</div>
+			</div>
+			<div class="feedback-amount">
+				<div class="feedback-amount-star">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+					<img src="icons/star-icon.svg" alt="">
+					<span class="feedback-amount-star-volume">4.5 / 5</span>
+					<span class="feedback-amount-star-all">Отзывы <img src="icons/arrow-link-icon.svg"></span>
+				</div>
+				<div class="feedback-amount-item">
+					<span class="feedback-amount-item-star">5 звёзд</span>
+					<div class="feedback-amount-item-bar"></div>
+					<span class="feedback-amount-item-amount">55</span>
+				</div>
+				<div class="feedback-amount-item">
+					<span class="feedback-amount-item-star">4 звезды</span>
+					<div class="feedback-amount-item-bar"></div>
+					<span class="feedback-amount-item-amount">8</span>
+				</div>
+				<div class="feedback-amount-item">
+					<span class="feedback-amount-item-star">3 звезды</span>
+					<div class="feedback-amount-item-bar"></div>
+					<span class="feedback-amount-item-amount">0</span>
+				</div>
+				<div class="feedback-amount-item">
+					<span class="feedback-amount-item-star">2 звезды</span>
+					<div class="feedback-amount-item-bar"></div>
+					<span class="feedback-amount-item-amount">0</span>
+				</div>
+				<div class="feedback-amount-item">
+					<span class="feedback-amount-item-star">1 звезда</span>
+					<div class="feedback-amount-item-bar"></div>
+					<span class="feedback-amount-item-amount">0</span>
+				</div>
+				<button class="feedback-amount-btn btn-pink">Написать отзыв</button>
+			</div>
+			<div class="feedback-all">
+				<a href="#">
+					показать ещё 
+					<img src="icons/arrow-link-icon.svg"class="feedback-all-link">
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Похожие товары -->
+	<section class="new">
+		<div class="container">
+			<div class="new-title">
+				<h2>Похожие товары</h2>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-1.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount">-20%</span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s>1499 ₽</s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-2.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-3.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-4.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-5.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Вы смотрели -->
+	<section class="new viewed">
+		<div class="container">
+			<div class="new-title">
+				<h2>Вы смотрели</h2>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-1.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount">-20%</span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s>1499 ₽</s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-2.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-3.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-4.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="new-item">
+				<div class="new-item__hover">
+					<div class="new-item-photo">
+						<img src="img/new/new-img-5.jpg" alt="image">
+						<span class="new-item__like">
+							<img src="icons/like-icon.svg" alt="">
+						</span>
+						<span class="new-item__discount"></span>
+					</div>
+					<div class="new-item-description">
+						<div class="new-item-description-price">
+							<span>899 ₽</span>
+							<s></s>
+						</div>
+						<div class="new-item-description-categories">
+							<span class="new-item-description-categories__brand"><a href="#">Tezenis</a></span>
+							<span class="new-item-description-categories__active"> / <a href="#">Пижама</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- Подписаться -->
+	<section class="subscribe">
+		<div class="container">
+			<form action="">
+				<h2 class="subscribe-title">Получайте самые интересные<br> предложения первыми!</h2>
+				<input type="email" name="" id="" placeholder="введите email" class="subscribe-email">
+				<button type="submit" class="subscribe-submit btn-red">Подписаться</button>
+				<p class="subscribe-agree">
+					Заполняя данную форму я даю согласие  на<br> обработку персональных данных и<br> принимаю <a href="#">условия политики</a>
+				</p>
+			</form>
+		</div>
+	</section>
+
+	<!-- Подвал -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-top-phone">
+					<a href="#">+7 800 555-35-35</a>
+					<span>08:00 - 18:00 по будням</span>
+				</div>
+				<div class="footer-top-social">
+					<a href="#"><img src="icons/vk-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/instagram-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/fb-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/whatsapp-icon.svg" alt=""></a>
+				</div>
+				<div class="footer-top-email">
+					<a href="#">info@pijams.ru</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-middle">
+			<div class="container">
+				<div class="footer-middle-logo">
+					<img src="icons/logo-black.svg" alt="">
+				</div>
+				<div class="footer-middle-nav">
+					<ul class="footer-middle-nav-list">
+						<li class="footer-middle-nav-item">
+							<a href="#">Доставка и оплата</a>
+							<a href="#">Контакты</a>
+						</li>
+						<li class="footer-middle-nav-item">
+							<a href="#">Новости</a>
+							<a href="#">Обмен и возврат</a>
+						</li>
+						<li class="footer-middle-nav-item">
+							<a href="#">Каталог</a>
+							<a href="#">Личный кабинет</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-middle-card">
+					<img src="img/footer/footer-money-card.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<p>© 2020 Интернет магазин pijams.ru</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Модальные окна -->
+	<!-- Окно входа -->
+	<div class="modal auth" id="auth">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Вход</h2>
+					<div class="modal-close" data-close>&times;</div>
+					<label>Электронная почта</label>
+					<input type="email" class="modal-email" placeholder="email@example.com">
+					<label>Пароль</label>
+					<input type="password" class="modal-password" placeholder="">
+					<button type="submit" class="modal-submit btn-black">Войти</button>
+					<a href="#" class="modal-forgot" data-modal="recovery">Забыли пароль?</a>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Войдите, чтобы совершать заказы -->
+	<div class="modal warning" id="warning">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<p>Войдите, чтобы делать <br> покупки и отслеживать заказы</p>
+					<div class="modal-close" data-close>&times;</div>
+					<button class="btn-black" data-modal="auth">Войти</button>
+					<button class="btn-red" data-modal="registration">Зарегистрироваться</button>
+					<div class="modal-social-auth">
+						<p>Вход через соцсети</p>
+						<a href="#"><img src="icons/vk-black-icon.svg" alt=""></a>
+						<a href="#"><img src="icons/google-black-icon.svg" alt=""></a>
+						<a href="#"><img src="icons/fb-black-icon.svg" alt=""></a>
+						<a href="#"><img src="icons/mail-black-icon.svg" alt=""></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно восстановления пароля -->
+	<div class="modal recovery" id="recovery">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Восстановление пароля</h2>
+					<div class="modal-close" data-close>&times;</div>
+					<label>Электронная почта</label>
+					<input type="email" class="modal-email" placeholder="email@example.com">
+					<button type="submit" class="modal-submit btn-black">Войти</button>
+					<p>Укажите адрес эл. почты, который вы использовали при регистрации. Мы вышлем вам инструкцию по восстановлению пароля.</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно регистрации -->
+	<div class="modal registration" id="registration">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Регистрация</h2>
+					<div class="modal-close" data-close>&times;</div>
+					<label>Имя</label>
+					<input type="text" class="modal-name" placeholder="Ваше имя">
+					<label>Электронная почта</label>
+					<input required type="email" class="modal-email" placeholder="email@example.com">
+					<label>Телефон</label>
+					<input type="number" class="modal-number" placeholder="+7 (963) 330-81-96">
+					<label>Пароль</label>
+					<input type="password" class="modal-password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+					<label>Подтверждение пароля</label>
+					<input type="password" class="modal-password-required" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+					<button type="submit" class="modal-submit btn-black">Зарегистрироваться</button>
+					<p>Нажимая кнопку «Зарегистрироваться»<br> я принимаю условия <a href="#">пользовательского соглашения</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно оставить отзыв о товаре -->
+	<div class="modal response" id="response">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Оставьте отзыв о товаре</h2>
+					<div class="modal-close" data-close>&times;</div>
+					<label for="modal-name">Имя</label>
+					<div class="response-star">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+						<img src="icons/star-icon.svg" alt="">
+					</div>
+					<label>Представьтесь пожалуйста</label>
+					<input required type="text" class="modal-response-name" placeholder="Ваше имя">
+					<label>Поделитесь впечатлениями</label>
+					<textarea name="modal-response-text" class="modal-response-text" placeholder="Текст отзыва" cols="30" rows="10"></textarea>
+					<button type="submit" class="modal-submit btn-pink">Написать отзыв</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Калькулятор размеров -->
+	<div class="modal sizes" id="sizes">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<div class="sizes-boobs">
+						<label>Обхват груди, см</label>
+						<input type="range" value="120" name="sizes-boobs-value" id="sizes-boobs-value" min="77" max="148">
+					</div>
+					<div class="sizes-under-boobs">
+						<label>Обхват под грудью, см</label>
+						<input type="range" value="89" name="sizes-under-boobs-value" id="sizes-under-boobs-value" min="77" max="148">
+					</div>
+					<div class="sizes-thighs">
+						<label>Обхват бёдер, см</label>
+						<input type="range" value="100" name="sizes-thighs-value" id="sizes-thighs-value" min="77" max="148">
+					</div>
+					<div class="sizes-rezult">
+						<p>Ваш размер бюстгалтера: <span>65J</span></p>
+						<p>Ваш размер трусов: <span>32EU</span></p>
+					</div>
+					<div class="sizes-table">
+						<!-- 1 строка -->
+						<div class="sizes-table-one">Размер на этикетке</div>
+						<div>60</div>
+						<div>65</div>
+						<div>70</div>
+						<div>75</div>
+						<div>80</div>
+						<div>90</div>
+						<div>100</div>
+						<div>110</div>
+						<div>120</div>
+						<!-- 2 строка -->
+						<div class="sizes-table-one">Обхват под грудью, см</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 3 строка -->
+						<div class="sizes-table-one">Размер чашки</div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<!-- 4 строка -->
+						<div class="sizes-table-one">A</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 5 строка -->
+						<div class="sizes-table-one">B</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 6 строка -->
+						<div class="sizes-table-one">C</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 7 строка -->
+						<div class="sizes-table-one">D</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 8 строка -->
+						<div class="sizes-table-one">E</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 9 строка -->
+						<div class="sizes-table-one">F</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 10 строка -->
+						<div class="sizes-table-one">G</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 11 строка -->
+						<div class="sizes-table-one">H</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 12 строка -->
+						<div class="sizes-table-one">I</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 13 строка -->
+						<div class="sizes-table-one">J</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+						<!-- 14 строка -->
+						<div class="sizes-table-one">K</div>
+						<div>63-67</div>
+						<div>68-72</div>
+						<div>73-77</div>
+						<div>78-82</div>
+						<div>83-87</div>
+						<div>88-92</div>
+						<div>93-97</div>
+						<div>98-102</div>
+						<div>103-107</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Мобильное меню -->
+	<div class="modal menu-mobile" id="menu-mobile">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-close" data-close>&times;</div>
+				<div class="menu-mobile-sex">
+					<div class="woman active">
+						<a href="#">Женское</a>
+					</div>
+					<div class="man">
+						<a href="#">Мужское</a>
+					</div>
+				</div>
+				<ul class="menu-mobile-list">
+					<li class="menu-mobile-item"><a href="#">Купальники</a></li>
+					<li class="menu-mobile-item">
+						<a href="#">Домашняя одежда</a>
+						<ul class="menu-mobile-submenu-list">
+							<div class="menu-mobile-submenu-item"><a href="#">Костюмы</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Платья</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Пижамы</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Халаты</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Комбинезоны</a></div>
+						</ul>
+					</li>
+					<li class="menu-mobile-item"><a href="#">Эротическое бельё</a></li>
+					<li class="menu-mobile-item"><a href="#">Нижнее бельё</a></li>
+					<li class="menu-mobile-item"><a href="#">Большие размеры</a></li>
+					<li class="menu-mobile-item"><a href="#">Новинки</a></li>
+					<li class="menu-mobile-item"><a href="#">Распродажа</a></li>
+				</ul>
+				<ul class="menu-mobile-nav-list">
+					<li class="menu-mobile-nav-item"><a href="#">Доставка и оплата</a></li>
+					<li class="menu-mobile-nav-item"><a href="#">Контакты</a></li>
+					<li class="menu-mobile-nav-item"><a href="#">Обмен и возврат</a></li>
+					<li class="menu-mobile-nav-item"><a href="#">Новости</a></li>
+				</ul>
+				<div class="menu-mobile-phone">
+					<img src="icons/phone-icon.svg" alt="">
+					<a href="#"><span>8 800 555-35-35</span></a>
+				</div>
+				<div class="menu-mobile-social">
+					<a href="#"><img src="icons/vk-black-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/instagram-black-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/fb-black-icon.svg" alt=""></a>
+					<a href="#"><img src="icons/whatsapp-black-icon.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Каталог-категории мобильная версия -->
+	<div class="modal menu-mobile" id="catalog-categories-mobile">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-close" data-close>&times;</div>
+				<div class="menu-mobile-sex">
+					<div class="woman active">
+						<a href="#">Женское</a>
+					</div>
+					<div class="man">
+						<a href="#">Мужское</a>
+					</div>
+				</div>
+				<ul class="menu-mobile-list">
+					<li class="menu-mobile-item"><a href="#">Купальники</a></li>
+					<li class="menu-mobile-item">
+						<a href="#">Домашняя одежда</a>
+						<ul class="menu-mobile-submenu-list">
+							<div class="menu-mobile-submenu-item"><a href="#">Костюмы</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Платья</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Пижамы</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Халаты</a></div>
+							<div class="menu-mobile-submenu-item"><a href="#">Комбинезоны</a></div>
+						</ul>
+					</li>
+					<li class="menu-mobile-item"><a href="#">Эротическое бельё</a></li>
+					<li class="menu-mobile-item"><a href="#">Нижнее бельё</a></li>
+					<li class="menu-mobile-item"><a href="#">Большие размеры</a></li>
+					<li class="menu-mobile-item"><a href="#">Новинки</a></li>
+					<li class="menu-mobile-item"><a href="#">Распродажа</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Каталог-фильтр мобильная версия -->
+	<div class="modal catalog-filter" id="catalog-filter">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-close" data-close>&times;</div>
+					<div class="catalog-filter-sort">
+					<select name="" id="" class="breadcrumbs-sort-list">
+						<option value="" class="breadcrumbs-sort-item">Самые дешёвые</option>
+						<option value="" class="breadcrumbs-sort-item">Самые дорогие</option>
+						<option value="" class="breadcrumbs-sort-item">По популярности</option>
+						<option value="" class="breadcrumbs-sort-item">По умолчанию</option>
+					</select>
+				</div>
+				<h3>Бренды</h3>
+				<ul class="catalog-filter-brand-list">
+					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Barmariska</label></li>
+					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">MANDELEINE</label></li>
+					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Gorolla</label></li>
+					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Твоё</label></li>
+					<li class="catalog-filter-brand-item"><input type="checkbox"><label for="">Gerasim</label></li>
+					<a href="#" class="catalog-filter-brand-list__all">развернуть</a>
+				</ul>
+				<h3>Размер</h3>
+				<ul class="catalog-filter-size-list">
+					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">XS</label></li>
+					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">S</label></li>
+					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">M</label></li>
+					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">L</label></li>
+					<li class="catalog-filter-size-item"><input type="checkbox"><label for="">XL</label></li>
+				</ul>
+				<h3>Цена</h3>
+				<div class="catalog-filter-money-size">
+					<input type="range" name="" id="">
+					<input type="text" class="catalog-filter-money-size__first" placeholder="от">
+					<input type="text" class="catalog-filter-money-size__last" placeholder="до">
+				</div>
+				<button class="btn-red">Показать</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/libs/swiper-bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		var tovarThumbs = new Swiper('.product-thumbs', {
+			direction: 'vertical',
+			spaceBetween: 20,
+      slidesPerView: 4,
+      loop: true,
+      freeMode: true,
+      loopedSlides: 1, //looped slides should be the same
+      watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			breakpoints: {
+				992: {
+					direction: 'vertical',
+					slidesPerView: 4,
+				},
+				480: {
+					direction: 'horizontal',
+					slidesPerView: 3,
+				},
+				0: {
+					direction: 'horizontal',
+					slidesPerView: 3,
+					spaceBetween: 10,
+				},
+			}
+		});
+		var tovarSlider = new Swiper('.product-slider', {
+			direction: 'vertical',
+  		loop: true,
+			slidesPerView: 1,
+			thumbs: {
+        swiper: tovarThumbs,
+			},
+			breakpoints: {
+				992: {
+					direction: 'vertical',
+					slidesPerView: 1,
+				},
+				0: {
+					direction: 'horizontal',
+					slidesPerView: 1,
+				},
+			}
+		});
+	</script>
+</body>
+</html>

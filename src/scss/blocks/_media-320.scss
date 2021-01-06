@@ -1,0 +1,20 @@
+@media(max-width: 320px){
+	.basket {
+		&-product {
+			&-item {
+				&-title {
+					left: 100px;
+					h3 {
+						a {
+							margin-bottom: 30px;
+						}
+					}
+				}
+				&-sum {
+					left: 100px;
+					top: 60%;
+				}
+			}
+		}
+	}
+}
