@@ -136,6 +136,14 @@
 			width: 100%;
 		}
 	}
+	.order{
+		&-total{
+			display: none;
+		}
+		&-product, &-delivery, &-form, &-payments{
+			width: 100%;
+		}
+	}
 }
 
 @media(max-width: 860px){

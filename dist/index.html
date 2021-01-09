@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Корзина</title>
+	<title>Оформление заказа</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');</style>
@@ -119,84 +119,174 @@
 		</div>
 	</section>
 
-	<!-- Корзина -->
-	<section class="basket">
+	<!-- Товары в заказе -->
+	<section class="order">
 		<div class="container">
-			<h1>Корзина</h1>
-			<div class="basket-product">
-				<div class="basket-product-item">
-					<div class="basket-product-item-img">
+			<h1>Оформление заказа</h1>
+			<div class="order-product">
+				<div class="order-product-header">
+					<span>1</span>
+					<h4>Товары в заказе</h4>
+					<a href="#">Вернуться в корзину</a>
+				</div>
+				<div class="order-product-item">
+					<div class="order-product-item-img">
 						<img src="img/new/new-img-1.jpg" alt="">
-						<span class="basket-product-item-discount">-20%</span>
 					</div>
-					<div class="basket-product-item-title">
-						<h3><a href="#">Пижама со звездочками - майка <br> на пуговицах с брюками</a></h3>
-						<span>Размер: М</span>
+					<div class="order-product-item-title">
+						<h3>
+							Пижама со звездами — майка на пуговицах с брюками <br>
+							<div class="order-product-item-sum order-product-item-sum__mobile">
+								<span>2 шт</span>
+							</div>
+							<span>Размер: М</span>
+						</h3>
 					</div>
-					<div class="basket-product-item-sum">
-						<span class="basket-product-item-sum__minus">-</span>
-						<input type="number" value="2">
-						<span class="basket-product-item-sum__plus">+</span>
+					<div class="order-product-item-sum">
+						<span>2 шт</span>
 					</div>
-					<div class="basket-product-item-price">
-						<span class="basket-product-item-price__new">899 ₽</span>
-						<span class="basket-product-item-price__old">1499 ₽</span>
-					</div>
-					<div class="basket-product-item-delete">
-						<span>&times;</span>
+					<div class="order-product-item-price">
+						<span>899 ₽</span>
 					</div>
 				</div>
-				<div class="basket-product-item">
-					<div class="basket-product-item-img">
+				<div class="order-product-item">
+					<div class="order-product-item-img">
 						<img src="img/new/new-img-2.jpg" alt="">
 					</div>
-					<div class="basket-product-item-title">
-						<h3><a href="#">Пижама со звездочками - майка <br> на пуговицах с брюками</a></h3>
-						<span>Размер: М</span>
+					<div class="order-product-item-title">
+						<h3>
+							Пижама со звездами — майка на пуговицах с брюками <br>
+							<div class="order-product-item-sum order-product-item-sum__mobile">
+								<span>2 шт</span>
+							</div>
+							<span>Размер: М</span>
+						</h3>
 					</div>
-					<div class="basket-product-item-sum">
-						<span class="basket-product-item-sum__minus">-</span>
-						<input type="number" value="2">
-						<span class="basket-product-item-sum__plus">+</span>
+					<div class="order-product-item-sum">
+						<span>2 шт</span>
 					</div>
-					<div class="basket-product-item-price">
-						<span class="basket-product-item-price__new">1899 ₽</span>
-					</div>
-					<div class="basket-product-item-delete">
-						<span>&times;</span>
+					<div class="order-product-item-price">
+						<span>899 ₽</span>
 					</div>
 				</div>
-				<div class="basket-product-item">
-					<div class="basket-product-item-img">
-						<img src="img/new/new-img-3.jpg" alt="">
-						<span class="basket-product-item-discount">-20%</span>
+				<div class="order-product-item">
+					<div class="order-product-item-img">
+						<img src="img/new/new-img-2.jpg" alt="">
 					</div>
-					<div class="basket-product-item-title">
-						<h3><a href="#">Пижама со звездочками - майка <br> на пуговицах с брюками</a></h3>
-						<span>Размер: М</span>
+					<div class="order-product-item-title">
+						<h3>
+							Пижама со звездами — майка на пуговицах с брюками <br>
+							<div class="order-product-item-sum order-product-item-sum__mobile">
+								<span>2 шт</span>
+							</div>
+							<span>Размер: М</span>
+						</h3>
 					</div>
-					<div class="basket-product-item-sum">
-						<span class="basket-product-item-sum__minus">-</span>
-						<input type="number" value="2">
-						<span class="basket-product-item-sum__plus">+</span>
+					<div class="order-product-item-sum">
+						<span>2 шт</span>
 					</div>
-					<div class="basket-product-item-price">
-						<span class="basket-product-item-price__new">899 ₽</span>
-						<span class="basket-product-item-price__old">1499 ₽</span>
-					</div>
-					<div class="basket-product-item-delete">
-						<span>&times;</span>
+					<div class="order-product-item-price">
+						<span>899 ₽</span>
 					</div>
 				</div>
 			</div>
-			<div class="basket-total">
-				<h2>Ваша корзина</h2>
-				<p class="basket-total-bodytag"><span>Товары</span><span>2300 ₽</span></p>
-				<p class="basket-total-bodytag"><span>Скидка</span><span>300 ₽</span></p>
-				<p class="basket-total-sum">Итого:<span>2999 ₽</span></p>
-				<input class="basket-total-promocode" type="text" placeholder="Введите промокод">
-				<button class="basket-total-order">Оформить заказ</button>
-				<a href="#" class="basket-total-clear">очистить корзину</a>
+			<div class="order-total">
+				<h2>Ваш заказ</h2>
+				<p class="order-total-bodytag"><span>Товары</span><span>2300 ₽</span></p>
+				<p class="order-total-bodytag"><span>Скидка</span><span>300 ₽</span></p>
+				<p class="order-total-bodytag"><span>Доставка</span><span>300 ₽</span></p>
+				<p class="order-total-sum">Итого: <span>2999 ₽</span></p>
+				<input class="order-total-promocode" type="text" placeholder="Введите промокод">
+				<button class="order-total-submit btn-black">Оформить заказ</button>
+			</div>
+			<div class="order-delivery">
+				<div class="order-delivery-header">
+					<span>2</span>
+					<h4>Выберите способ доставки</h4>
+				</div>
+				<div class="order-delivery-method">
+					<div class="order-delivery-method-item">
+						<input type="radio" name="order-delivery-method-item" id="order-delivery-method-item__sdek"	value="sdek" checked>
+						<label for="order-delivery-method-item__sdek"><span></span>СДЭК</label>
+					</div>
+					<div class="order-delivery-method-item">
+						<input type="radio" name="order-delivery-method-item" id="order-delivery-method-item__pochta"	value="pochta">
+						<label for="order-delivery-method-item__pochta"><span></span>Почта России</label>
+					</div>
+					<div class="order-delivery-method-item">
+						<input type="radio" name="order-delivery-method-item" id="order-delivery-method-item__boxberry"	value="boxberry">
+						<label for="order-delivery-method-item__boxberry"><span></span>Boxberry</label>
+					</div>
+				</div>
+			</div>
+			<div class="order-form">
+				<div class="order-form-header">
+					<span>3</span>
+					<h4>Введите данные получателя</h4>
+				</div>
+				<div class="order-form-data">
+					<div class="order-form-data-item">
+						<label for="order-form-data-name">ФИО получателя<span>*</span></label>
+						<input type="text" id="order-form-data-name" placeholder="Фамилия Имя Отчество">
+					</div>
+					<div class="order-form-data-item">
+						<label for="order-form-data-index">Почтовый индекс</label>
+						<input type="text" id="order-form-data-index" placeholder="Индекс">
+					</div>
+					<div class="order-form-data-item">
+						<label for="order-form-data-area">Область</label>
+						<input type="text" id="order-form-data-area" placeholder="Область">
+					</div>
+					<div class="order-form-data-item">
+						<label for="order-form-data-city">Город</label>
+						<input type="text" id="order-form-data-city" placeholder="Город">
+					</div>
+					<div class="order-form-data-item">
+						<label for="order-form-data-address">Адрес</label>
+						<input type="text" id="order-form-data-address" placeholder="Улица, город, квартира">
+					</div>
+					<div class="order-form-data-item">
+						<label for="order-form-data-number">Телефон</label>
+						<input type="text" id="order-form-data-number" placeholder="+7 800 555-35-35">
+					</div>
+					<div class="order-form-data-item">
+						<label for="order-form-data-email">Email</label>
+						<input type="email" id="order-form-data-email" placeholder="email@example.com">
+					</div>
+				</div>
+			</div>
+			<div class="order-payments">
+				<div class="order-payments-header">
+					<span>4</span>
+					<h4>Выберете способ оплаты</h4>
+				</div>
+				<div class="order-payments-selection">
+					<div class="order-payments-selection-item">
+						<input type="radio" id="order-payments-selection-item__sberbank" name="order-payments-selection-item-checkbox" checked>
+						<label for="order-payments-selection-item__sberbank">
+							<span class="order-payments-selection-item-checkbox"></span>
+							<div>
+								<img src="img/order/order-sber.png" alt="">
+								<span>Сбербанк онлайн</span>
+							</div>
+						</label>
+					</div>
+					<div class="order-payments-selection-item">
+						<input type="radio" id="order-payments-selection-item__yandex" name="order-payments-selection-item-checkbox">
+						<label for="order-payments-selection-item__yandex">
+							<span class="order-payments-selection-item-checkbox"></span>
+							<div>
+								<img src="img/order/order-ya.png" alt="">
+								<span>Яндекс касса</span>
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="order-payments-total">
+					<p class="order-payments-total-wanted">Отправляя данную форму я даю согласие на обработку персональных данных и принимаю <a href="#">условия политики</a></p>
+					<button class="btn-red">Оплатить заказ</button>
+					<p>Итого: <span>2999 ₽</span></p>
+				</div>
 			</div>
 		</div>
 	</section>
