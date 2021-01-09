@@ -541,4 +541,41 @@
 			}
 		}
 	}
+	.done{
+		padding: 0 35px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		.container{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		&-heart{
+			text-align: center;
+			img{
+				width: 80%;
+			}
+		}
+		&-title{
+			h1{
+				font-size: 36px;
+				margin-top: 0;
+			}
+			h2{
+				font-size: 20px;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+		&-button{
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+			button{
+				width: 100%;
+				margin-top: 15px;
+			}
+		}
+	}
 }
