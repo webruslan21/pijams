@@ -578,4 +578,92 @@
 			}
 		}
 	}
+	.account{
+		margin-top: 0;
+		&-sidebar{
+			&-img{
+				display: none;
+				margin-left: 0;
+			}
+			&-menu{
+				margin-top: 20px;
+			}
+		}
+		&-orders{
+			&-tabs{
+				&-item{
+					width: 50%;
+					margin-right: 32px;
+					text-align: center;
+				}
+			}
+			&-header{
+				flex-direction: column;
+				align-items: flex-start;
+				padding: 20px 10px;
+				border-radius: 0;
+				&-submit{
+					display: none;
+				}
+				&-done{
+					margin-left: 0;
+					margin-top: 5px;
+				}
+			}
+			&-block{
+				border-radius: 0;
+			}
+			&-item{
+				position: relative;
+				justify-content: flex-start;
+				padding: 10px 0;
+				margin: 0 10px;
+				&-title{
+					margin-left: 10px;
+					h3{
+						span{
+							margin-top: 15px;
+						}
+					}
+				}
+				&-sum{
+					display: none;
+					margin-top: 15px;
+					&__mobile{
+						display: block;
+					}
+				}
+				&-price{
+					position: absolute;
+					top: 80%;
+					right: 10px;
+				}
+			}
+		}
+		&-address{
+			&-header{
+				padding: 20px 10px;
+			}
+			&-form{
+				padding: 0 20px 20px 20px;
+				&-block{
+					flex-direction: column;
+				}
+			}
+		}
+		&-item{
+			width: 50%;
+		}
+		&-profile{
+			&-header{
+				padding: 20px 10px;
+			}
+			&-data{
+				padding: 0 20px 0 20px;
+			}
+			&-item{
+				width: 50%;
+			}
+		}
+	}
 }

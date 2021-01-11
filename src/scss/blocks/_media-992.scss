@@ -245,4 +245,12 @@
 			}
 		}
 	}
+	.account{
+		.container{
+			flex-direction: column;
+		}
+		&-sidebar{
+			margin-bottom: 30px;
+		}
+	}
 }

@@ -120,9 +120,396 @@
 	</section>
 
 	<!-- Личный кабинет -->
-	<section class="done">
+	<section class="account">
 		<div class="container">
-			
+			<div class="account-sidebar">
+				<div class="account-sidebar-img">
+					<img src="icons/account-img.svg" alt="">
+				</div>
+				<h1>Алексей<br> Навальный</h1>
+				<a href="#" class="account-sidebar-exit">выйти из профиля</a>
+				<ul class="account-sidebar-menu">
+					<li class="account-sidebar-item account-sidebar-item__active">
+						<a href="#">Заказы</a>
+					</li>
+					<li class="account-sidebar-item">
+						<a href="#">Адреса доставки</a>
+					</li>
+					<li class="account-sidebar-item">
+						<a href="#">Отложенные товары</a>
+					</li>
+					<li class="account-sidebar-item">
+						<a href="#">Бонусная программа</a>
+					</li>
+					<li class="account-sidebar-item">
+						<a href="#">Настройки профиля</a>
+					</li>
+				</ul>
+			</div>
+			<div class="account-orders">
+				<h2>Заказы</h2>
+				<div class="account-orders-tabs">
+					<a href="#" class="account-orders-tabs-item account-orders-tabs-item__active">Активные заказы <span>1</span></a>
+					<a href="#" class="account-orders-tabs-item">Все заказы <span>2</span></a>
+				</div>
+				<div class="account-orders-block">
+					<div class="account-orders-header">
+						<p>Заказ № 1337-228 <span>от 20.06.2020</span></p>
+						<button class="account-orders-header-submit btn-red">Оплатить</button>
+						<span class="account-orders-header-done">Оплачен</span>
+					</div>
+					<div class="account-orders-item">
+						<div class="account-orders-item-img">
+							<img src="img/new/new-img-1.jpg" alt="">
+						</div>
+						<div class="account-orders-item-title">
+							<h3>
+								Пижама со звездами — майка на пуговицах с брюками <br>
+								<div class="account-orders-item-sum account-orders-item-sum__mobile">
+									<span>2 шт</span>
+								</div>
+								<span>Размер: М</span>
+							</h3>
+						</div>
+						<div class="account-orders-item-sum">
+							<span>2 шт</span>
+						</div>
+						<div class="account-orders-item-price">
+							<span>899 ₽</span>
+						</div>
+					</div>
+					<div class="account-orders-item">
+						<div class="account-orders-item-img">
+							<img src="img/new/new-img-2.jpg" alt="">
+						</div>
+						<div class="account-orders-item-title">
+							<h3>
+								Пижама со звездами — майка на пуговицах с брюками <br>
+								<div class="account-orders-item-sum account-orders-item-sum__mobile">
+									<span>2 шт</span>
+								</div>
+								<span>Размер: М</span>
+							</h3>
+						</div>
+						<div class="account-orders-item-sum">
+							<span>2 шт</span>
+						</div>
+						<div class="account-orders-item-price">
+							<span>899 ₽</span>
+						</div>
+					</div>
+					<div class="account-orders-item">
+						<div class="account-orders-item-img">
+							<img src="img/new/new-img-2.jpg" alt="">
+						</div>
+						<div class="account-orders-item-title">
+							<h3>
+								Пижама со звездами — майка на пуговицах с брюками <br>
+								<div class="account-orders-item-sum account-orders-item-sum__mobile">
+									<span>2 шт</span>
+								</div>
+								<span>Размер: М</span>
+							</h3>
+						</div>
+						<div class="account-orders-item-sum">
+							<span>2 шт</span>
+						</div>
+						<div class="account-orders-item-price">
+							<span>899 ₽</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="account-address">
+				<div class="account-address-header">
+					<p>173000 г. Великий Новгород, ул. Московская, д. 61, кв. 123</p>
+				</div>
+				<div class="account-address-form">
+					<div class="account-address-form-item">
+						<label for="account-address-form-name">ФИО получателя</label>
+						<input type="text" id="account-address-form-name" placeholder="Фамилия Имя Отчество">
+					</div>
+					<div class="account-address-form-item">
+						<label for="account-address-form-index">Почтовый индекс</label>
+						<input type="text" id="account-address-form-index" placeholder="Индекс">
+					</div>
+					<div class="account-address-form-item">
+						<label for="account-address-form-area">Область</label>
+						<input type="text" id="account-address-form-area" placeholder="Область">
+					</div>
+					<div class="account-address-form-item">
+						<label for="account-address-form-city">Город</label>
+						<input type="text" id="account-address-form-city" placeholder="Город">
+					</div>
+					<div class="account-address-form-item">
+						<label for="account-address-form-address">Адрес</label>
+						<input type="text" id="account-address-form-address" placeholder="Улица, город, квартира">
+					</div>
+					<div class="account-address-form-submit">
+						<button class="btn-black">Сохранить адрес</button>
+						<p>Заполняя данную форму я даю согласие на <br> обработку персональных данных и <br> принимаю <a href="#">условия политики</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="account-list">
+				<div class="account-list-header">
+					<p>Отложенные товары</p>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-1.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount">-20%</span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s>1499 ₽</s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+							<button class="btn-red">В корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-2.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount"></span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+						<button class="btn-grey">В корзину</button>
+					</div>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-3.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount"></span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+						<button class="btn-red">В корзину</button>
+					</div>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-4.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount"></span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+						<button class="btn-red">В корзину</button>
+					</div>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-5.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount"></span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+						<button class="btn-red">В корзину</button>
+					</div>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-6.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount"></span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+						<button class="btn-red">В корзину</button>
+					</div>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-7.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount"></span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+						<button class="btn-red">В корзину</button>
+					</div>
+				</div>
+				<div class="account-item">
+					<div class="account-item__hover">
+						<div class="account-item-photo">
+							<img src="img/hot/hot-img-8.jpg" alt="image">
+							<span class="account-item__like">
+								<img src="icons/like-icon.svg" alt="">
+							</span>
+							<span class="account-item__discount"></span>
+						</div>
+						<div class="account-item-description">
+							<div class="account-item-description-price">
+								<span>899 ₽</span>
+								<s></s>
+							</div>
+							<div class="account-item-description-categories">
+								<span class="account-item-description-categories__brand"><a href="#">Tezenis</a></span>
+								<span class="account-item-description-categories__active"> / <a href="#">Пижама</a></span>
+							</div>
+						</div>
+						<button class="btn-red">В корзину</button>
+					</div>
+				</div>
+			</div>
+			<div class="account-profile">
+				<div class="account-profile-header">
+					<p>Контактная информация</p>
+					<a href="#">Редактировать</a>
+				</div>
+				<div class="account-profile-data">
+					<div class="account-profile-item">
+						<label>Имя</label>
+						<span>Алексей</span>
+					</div>
+					<div class="account-profile-item">
+						<label>Телефон</label>
+						<span>+7 (800) 555-35-35</span>
+					</div>
+					<div class="account-profile-item">
+						<label>Email</label>
+						<span>Navalny@kremlin.ru</span>
+					</div>
+					<div class="account-profile-item">
+						<label>Фамилия</label>
+						<span>Навальный</span>
+					</div>
+					<div class="account-profile-item">
+						<label>Дата рождения</label>
+						<span>11 сентября 2001 г.</span>
+					</div>
+					<div class="account-profile-item">
+						<label>Пол</label>
+						<span>Женский</span>
+					</div>
+				</div>
+			</div>
+			<div class="account-address">
+				<div class="account-address-header">
+					<p>Контактная информация</p>
+				</div>
+				<div class="account-address-form">
+					<div class="account-address-form-item">
+						<label for="account-address-form-name">Имя</label>
+						<input type="text" id="account-address-form-name" placeholder="Ваше имя">
+					</div>
+					<div class="account-address-form-item">
+						<label for="account-address-form-lastname">Фамилия</label>
+						<input type="text" id="account-address-form-lastname" placeholder="Ваша фамилия">
+					</div>
+					<div class="account-address-form-item">
+						<label for="account-address-form-email">Email</label>
+						<input type="text" id="account-address-form-email" placeholder="example@example.com">
+					</div>
+					<div class="account-address-form-item">
+						<label for="account-address-form-phone">Телефон</label>
+						<input type="text" id="account-address-form-phone" placeholder="+7 (000) 000-00-00">
+					</div>
+					<div class="account-address-form-block">
+						<div class="account-address-form-item">
+							<label for="account-address-form-address">Адрес</label>
+							<input type="text" id="account-address-form-address" placeholder="ДД.ММ.ГГГГ">
+						</div>
+						<div class="account-address-form-item">
+							<label>Пол</label>
+							<div class="account-address-form-sex">
+								<div class="account-address-form-sex-item">
+									<input type="radio" name="account-address-form-sex" id="account-address-form-sex-male" value="male" checked>
+									<label for="account-address-form-sex-male"><span></span>Мужчина</label>
+								</div>
+								<div class="account-address-form-sex-item">
+									<input type="radio" name="account-address-form-sex" id="account-address-form-sex-female" value="female">
+									<label for="account-address-form-sex-female"><span></span>Женщина</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="account-address-form-submit">
+						<button class="btn-black">Сохранить адрес</button>
+						<p>Заполняя данную форму я даю согласие на <br> обработку персональных данных и <br> принимаю <a href="#">условия политики</a></p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 

@@ -436,3 +436,17 @@ template {
 		background-color: $pink-active;
 	}
 }
+
+.btn-grey {
+	background-color: $grey;
+	color: $white;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	&:hover{
+		background-color: $darkGrey;
+	}
+	&:active{
+		background-color: $lightGrey;
+	}
+}
