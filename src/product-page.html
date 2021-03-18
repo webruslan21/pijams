@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Страница товара</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
 </head>
 <body>
 		
@@ -116,6 +116,22 @@
 			<div class="breadcrumbs-list">
 				<p><a href="#">Главная</a> > <a href="#">Женское</a> > <a href="#">Домашняя одежда</a></p>
 			</div>
+			<div class="breadcrumbs-sort">
+				<select name="" id="" class="breadcrumbs-sort-list">
+					<option value="" class="breadcrumbs-sort-item">Самые дешёвые</option>
+					<option value="" class="breadcrumbs-sort-item">Самые дорогие</option>
+					<option value="" class="breadcrumbs-sort-item">По популярности</option>
+					<option value="" class="breadcrumbs-sort-item">По умолчанию</option>
+				</select>
+			</div>
+			<div class="breadcrumbs-categories" data-modal="catalog-categories-mobile">
+				<img src="icons/categories-icon.svg" alt="">
+				<span>Категории</span>
+			</div>
+			<div class="breadcrumbs-filter" data-modal="catalog-filter">
+				<img src="icons/filter-icon.svg" alt="">
+				<span>Фильтры</span>
+			</div>
 		</div>
 	</section>
 
@@ -169,7 +185,7 @@
 					<button class="product-info-add-basket btn-black">Добавить в корзину</button>
 					<button class="product-info-add-postponed"><img src="icons/heart-icon.svg" alt=""></button>
 				</div>
-				<a class="product-info-sizes-button"><img src="icons/sizes-icon.svg" alt=""> <span>Таблица размеров</span></a>
+				<a class="product-info-sizes-button" data-modal="sizes"><img src="icons/sizes-icon.svg" alt=""> <span>Таблица размеров</span></a>
 				<h3>О товаре</h3>
 				<div class="product-info-table">
 					<div>Премиум качество</div>
@@ -272,7 +288,7 @@
 					<div class="feedback-amount-item-bar"></div>
 					<span class="feedback-amount-item-amount">0</span>
 				</div>
-				<button class="feedback-amount-btn btn-pink">Написать отзыв</button>
+				<button class="feedback-amount-btn btn-pink" data-modal="response">Написать отзыв</button>
 			</div>
 			<div class="feedback-all">
 				<a href="#">
@@ -511,6 +527,7 @@
 		</div>
 	</section>
 
+
 		<!-- Подписаться -->
 	<section class="subscribe">
 		<div class="container">
@@ -689,19 +706,19 @@
 				<form action="#">
 					<div class="sizes-boobs">
 						<label>Обхват груди, см</label>
-						<input type="range" value="120" name="sizes-boobs-value" id="sizes-boobs-value" min="77" max="148">
+						<input type="range" name="sizes-boobs-value" id="sizes-boobs-value" value="85">
 					</div>
 					<div class="sizes-under-boobs">
 						<label>Обхват под грудью, см</label>
-						<input type="range" value="89" name="sizes-under-boobs-value" id="sizes-under-boobs-value" min="77" max="148">
+						<input type="range" name="sizes-under-boobs-value" id="sizes-under-boobs-value" value="85">
 					</div>
 					<div class="sizes-thighs">
 						<label>Обхват бёдер, см</label>
-						<input type="range" value="100" name="sizes-thighs-value" id="sizes-thighs-value" min="77" max="148">
+						<input type="range" name="sizes-thighs-value" id="sizes-thighs-value" value="85">
 					</div>
 					<div class="sizes-rezult">
-						<p>Ваш размер бюстгалтера: <span>65J</span></p>
-						<p>Ваш размер трусов: <span>32EU</span></p>
+						<p>Ваш размер бюстгалтера: <span id="sizes-rezult-bra"></span></p>
+						<p>Ваш размер трусов: <span id="sizes-rezult-pants"></span></p>
 					</div>
 					<div class="sizes-table">
 						<!-- 1 строка -->
@@ -991,8 +1008,23 @@
 		</div>
 	</div>
 
-	<script src="js/libs/swiper-bundle.min.js"></script>
+	<!-- Товар добавлен в корзину -->
+	<!-- <div class="modal basket-add" id="basket-add">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#">
+					<h2>Товар добавлен в корзину</h2>
+					<div class="modal-close" data-close>&times;</div>
+
+				</form>
+			</div>
+		</div>
+	</div> -->
+
+
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
 		var tovarThumbs = new Swiper('.product-thumbs', {
@@ -1038,6 +1070,89 @@
 				},
 			}
 		});
+	</script>
+	<script>
+		$("#sizes-boobs-value").ionRangeSlider({
+			min: 77,
+			max: 148,
+			from: 120,
+			skin: "round",
+			postfix: " см",
+		});
+		$("#sizes-under-boobs-value").ionRangeSlider({
+			min: 63,
+			max: 122,
+			from: 80,
+			skin: "round",
+			postfix: " см",
+		});
+		$("#sizes-thighs-value").ionRangeSlider({
+			min: 80,
+			max: 140,
+			from: 100,
+			skin: "round",
+			postfix: " см",
+		});
+	</script>
+	<script>
+		brafitter = function () {
+			s1 = parseInt($('#sizes-boobs-value').val());
+			s2 = parseInt($('#sizes-under-boobs-value').val());
+			s = s1 - s2;
+			s3 = parseInt($('#sizes-thighs-value').val());
+			console.log(s1 + ' / ' + s2 + ' / ' + s3)
+			S1 = Array();
+			s1b = '--';
+			S1[10] = 'A';
+			S1[12] = 'B';
+			S1[14] = 'C';
+			S1[16] = 'D';
+			S1[18] = 'E';
+			S1[20] = 'F';
+			S1[22] = 'G';
+			S1[24] = 'H';
+			S1[26] = 'I';
+			S1[30] = 'J';
+			S1[32] = 'K';
+			S1[34] = 'L';
+			S1[36] = 'M';
+			S1[38] = '--';
+
+			S2 = Array();
+			S2[63] = '65';
+			S2[68] = '70';
+			S2[73] = '75';
+			S2[78] = '80';
+			S2[83] = '85';
+			S2[88] = '90';
+			S2[93] = '95';
+			S2[98] = '100';
+			S2[103] = '105';
+			S2[108] = '110';
+			S2[113] = '115';
+			S2[118] = '120';
+			s2b = '--';
+			for (var a in S2) {
+
+					if (a < s2) {
+							s2b = S2[a];//a+ ' : '+S2[a]+ ' : '+ s2 + ' = ' + (a<s2)
+					}
+			}
+			for (var a in S1) {
+
+					if (a < s) {
+							s1b = S1[a];
+					}
+			}
+			size_1 = s2b + '' + s1b;
+			size_2 = Math.floor(s3 / 5) * 2;
+
+			$('#sizes-rezult-bra').html(size_1);
+			$('#sizes-rezult-pants').html(size_2 + " EU");
+		};
+		setInterval(function(){
+			brafitter();
+		}, 100);
 	</script>
 </body>
 </html>

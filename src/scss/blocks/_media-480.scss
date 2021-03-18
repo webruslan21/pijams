@@ -26,15 +26,8 @@
 		padding-top: 0;
 		padding-bottom: 10px;
 		&-slider{
-			.slick-list{
-				border-radius: 10px;
-			}
-			.slick-dots{
-				li{
-					button{
-						width: 30px;
-					}
-				}
+			.swiper-pagination-bullet{
+				width: 35px;
 			}
 		}
 	}

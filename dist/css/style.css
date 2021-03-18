@@ -466,7 +466,8 @@ template {
     position: absolute;
     top: 12px;
     right: 15px;
-    opacity: 0.3; }
+    opacity: 0.3;
+    cursor: pointer; }
 
 .header-order {
   display: flex;
@@ -538,52 +539,34 @@ template {
   .main .container {
     flex-wrap: nowrap; }
   .main-slider {
+    position: relative;
     width: 66%;
-    margin-right: 0 !important; }
-    .main-slider-item {
+    margin-right: 0 !important;
+    margin-bottom: 20px; }
+    .main-slider .swiper-slide {
       position: relative;
       outline: none; }
-      .main-slider-item img {
-        width: 100%; }
-    .main-slider .slick-list {
-      border-radius: 25px; }
-    .main-slider .slick-prev,
-    .main-slider .slick-next {
-      position: absolute;
-      top: 50%;
-      z-index: 1;
-      width: 30px;
-      height: 30px;
-      border-radius: 100%;
-      cursor: pointer;
-      outline: none;
-      border: none;
-      opacity: 0.65;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06); }
-    .main-slider .slick-prev {
-      margin-left: 30px;
-      transform: translateY(-50%); }
-    .main-slider .slick-next {
-      right: 30px;
-      transform: rotate(180deg) translateY(50%); }
-    .main-slider .slick-dots {
-      display: flex;
-      justify-content: center; }
-      .main-slider .slick-dots li {
-        list-style-type: none; }
-        .main-slider .slick-dots li button {
-          font-size: 0;
-          background-color: #F1F1F1;
-          margin-left: 10px;
-          top: 10px;
-          border: none;
-          outline: none;
-          width: 70px;
-          height: 3px; }
-        .main-slider .slick-dots li:first-child button {
-          margin-left: 0; }
-      .main-slider .slick-dots .slick-active button {
-        background-color: #EC3A87; }
+      .main-slider .swiper-slide img {
+        width: 100%;
+        border-radius: 25px; }
+    .main-slider .swiper-pagination-bullet {
+      border-radius: 0;
+      width: 70px;
+      height: 3px;
+      margin: 0 5px; }
+    .main-slider .swiper-pagination {
+      width: 100%; }
+    .main-slider .swiper-pagination-bullet-active {
+      background-color: #EC3A87; }
+    .main-slider .swiper-button-prev {
+      outline: none; }
+      .main-slider .swiper-button-prev:after {
+        display: none; }
+    .main-slider .swiper-button-next {
+      transform: rotate(180deg);
+      outline: none; }
+      .main-slider .swiper-button-next:after {
+        display: none; }
   .main-banner {
     flex: 1;
     margin-left: 30px; }
@@ -2576,6 +2559,29 @@ template {
   display: none; }
   .sizes .modal-dialog {
     max-width: 80%; }
+  .sizes .irs {
+    width: 100%; }
+  .sizes .irs--round .irs-from,
+  .sizes .irs--round .irs-to,
+  .sizes .irs--round .irs-single {
+    background-color: #FFFFFF;
+    color: #222222; }
+  .sizes .irs--round .irs-from:before,
+  .sizes .irs--round .irs-to:before,
+  .sizes .irs--round .irs-single:before {
+    border-top-color: #FFFFFF; }
+  .sizes .irs--round .irs-min,
+  .sizes .irs--round .irs-max {
+    background-color: #FFFFFF;
+    padding: 3px 0; }
+  .sizes .irs--round .irs-bar {
+    background-color: #EC3A87; }
+  .sizes .irs--round .irs-handle {
+    top: 28px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer; }
   .sizes-boobs, .sizes-under-boobs, .sizes-thighs {
     display: flex;
     align-items: center; }
@@ -2600,7 +2606,7 @@ template {
         margin-left: 15px; }
   .sizes-table {
     display: grid;
-    grid-template-columns: 2.5fr repeat(9, 1fr);
+    grid-template-columns: 2.8fr repeat(9, 1fr);
     grid-gap: 20px; }
     .sizes-table-one {
       font-weight: 700;
@@ -3316,19 +3322,27 @@ template {
         margin-top: 15px; }
   .account {
     margin-top: 0; }
-    .account-sidebar-img {
-      display: none;
-      margin-left: 0; }
-    .account-sidebar-menu {
-      margin-top: 20px; }
-    .account-orders-tabs-item {
-      width: 50%;
-      margin-right: 32px;
-      text-align: center; }
+    .account .container {
+      padding: 0; }
+    .account-sidebar {
+      padding: 0 15px; }
+      .account-sidebar-img {
+        display: none;
+        margin-left: 0; }
+      .account-sidebar-menu {
+        margin-top: 20px; }
+    .account-orders h2 {
+      padding: 0 15px; }
+    .account-orders-tabs {
+      padding: 0 15px; }
+      .account-orders-tabs-item {
+        width: 50%;
+        margin-right: 32px;
+        text-align: center; }
     .account-orders-header {
       flex-direction: column;
       align-items: flex-start;
-      padding: 20px 10px;
+      padding: 20px 15px;
       border-radius: 0; }
       .account-orders-header-submit {
         display: none; }
@@ -3341,11 +3355,13 @@ template {
       position: relative;
       justify-content: flex-start;
       padding: 10px 0;
-      margin: 0 10px; }
+      margin: 0 15px; }
       .account-orders-item-title {
         margin-left: 10px; }
         .account-orders-item-title h3 span {
-          margin-top: 15px; }
+          margin-top: 15px;
+          background: none;
+          padding: 0; }
       .account-orders-item-sum {
         display: none;
         margin-top: 15px; }
@@ -3355,20 +3371,57 @@ template {
         position: absolute;
         top: 80%;
         right: 10px; }
-    .account-address-header {
-      padding: 20px 10px; }
-    .account-address-form {
-      padding: 0 20px 20px 20px; }
-      .account-address-form-block {
-        flex-direction: column; }
+    .account-address {
+      border-radius: 0; }
+      .account-address-header {
+        border-radius: 0;
+        padding: 20px 15px; }
+      .account-address-form {
+        padding: 0 15px 20px 15px; }
+        .account-address-form-block {
+          flex-direction: column; }
+        .account-address-form-submit {
+          flex-wrap: wrap; }
+          .account-address-form-submit button {
+            width: 100%; }
+          .account-address-form-submit p {
+            margin-top: 10px;
+            margin-left: 0; }
+            .account-address-form-submit p br {
+              display: none; }
     .account-item {
       width: 50%; }
-    .account-profile-header {
-      padding: 20px 10px; }
-    .account-profile-data {
-      padding: 0 20px 0 20px; }
-    .account-profile-item {
-      width: 50%; } }
+      .account-item:hover {
+        transform: scale(1.1) !important; }
+        .account-item:hover .account-item__hover {
+          transform: scale(0.9) !important; }
+    .account-list {
+      padding: 0 5px; }
+      .account-list-header {
+        margin-bottom: 20px; }
+        .account-list-header p {
+          padding: 0 15px; }
+    .account-profile {
+      border-radius: 0; }
+      .account-profile-header {
+        border-radius: 0;
+        padding: 20px 15px; }
+      .account-profile-data {
+        padding: 0 15px; }
+      .account-profile-item {
+        width: 50%; }
+        .account-profile-item:nth-child(1) {
+          order: 1; }
+        .account-profile-item:nth-child(2) {
+          order: 2; }
+        .account-profile-item:nth-child(3) {
+          order: 5; }
+        .account-profile-item:nth-child(4) {
+          order: 3; }
+        .account-profile-item:nth-child(5) {
+          order: 4; }
+        .account-profile-item:nth-child(6) {
+          order: 6; } }
 
 @media (max-width: 480px) {
   .header-logo img {
@@ -3384,10 +3437,8 @@ template {
   .main {
     padding-top: 0;
     padding-bottom: 10px; }
-    .main-slider .slick-list {
-      border-radius: 10px; }
-    .main-slider .slick-dots li button {
-      width: 30px; }
+    .main-slider .swiper-pagination-bullet {
+      width: 35px; }
   .new-item {
     padding: 5px; }
   .hot-item {

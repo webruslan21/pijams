@@ -5,8 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Главная</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
 		
@@ -114,11 +113,22 @@
 	<section class="main">
 		<div class="container">
 			<div class="main-slider">
-				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
-				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
-				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
-				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
-				<div class="main-slider-item"><img src="img/main/main-slider.jpg" alt=""></div>
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/main/main-slider.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/main/main-slider.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/main/main-slider.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/main/main-slider.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="img/main/main-slider.jpg" alt=""></div>
+					</div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"><img src="icons/arrow.svg"></div>
+					<div class="swiper-button-next"><img src="icons/arrow.svg"></div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
 			</div>
 			<div class="main-banner">
 				<img src="img/main/main-banner.jpg" alt="">
@@ -581,13 +591,17 @@
 				<h2>Модные бренды</h2>
 			</div>
 			<div class="brand-slider">
-				<div class="brand-slider-item"><img src="img/brand/brand-img-1.png" alt=""></div>
-				<div class="brand-slider-item"><img src="img/brand/brand-img-2.png" alt=""></div>
-				<div class="brand-slider-item"><img src="img/brand/brand-img-3.png" alt=""></div>
-				<div class="brand-slider-item"><img src="img/brand/brand-img-4.png" alt=""></div>
-				<div class="brand-slider-item"><img src="img/brand/brand-img-5.png" alt=""></div>
-				<div class="brand-slider-item"><img src="img/brand/brand-img-6.png" alt=""></div>
-				<div class="brand-slider-item"><img src="img/brand/brand-img-7.png" alt=""></div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/brand/brand-img-1.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/brand/brand-img-2.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/brand/brand-img-3.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/brand/brand-img-4.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/brand/brand-img-5.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/brand/brand-img-6.png" alt=""></div>
+						<div class="swiper-slide"><img src="img/brand/brand-img-7.png" alt=""></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -1041,7 +1055,49 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		var mySwiper = new Swiper('.main-slider .swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+
+			// And if we need scrollbar
+			scrollbar: {
+				el: '.swiper-scrollbar',
+			},
+		});
+
+		var mySwiper = new Swiper('.brand-slider .swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+			slidesPerView: 7,
+			breakpoints: {
+				// when window width is >= 320px
+				1200: {
+					slidesPerView: 7,
+				},
+				768: {
+					slidesPerView: 5,
+				},
+				0: {
+					slidesPerView: 3,
+				},
+			}
+		});
+	</script>
 </body>
 </html>

@@ -179,6 +179,35 @@
 			max-width: 80%;
 		}
 	}
+	.irs{
+		width: 100%;
+	}
+	.irs--round .irs-from,
+	.irs--round .irs-to,
+	.irs--round .irs-single{
+		background-color: $white;
+		color: $black;
+	}
+	.irs--round .irs-from:before,
+	.irs--round .irs-to:before,
+	.irs--round .irs-single:before{
+		border-top-color: $white;
+	}
+	.irs--round .irs-min,
+	.irs--round .irs-max{
+		background-color: $white;
+		padding: 3px 0;
+	}
+	.irs--round .irs-bar{
+		background-color: $red;
+	}
+	.irs--round .irs-handle{
+		top: 28px;
+		width: 20px;
+		height: 20px;
+		border: none;
+		cursor: pointer;
+	}
 	&-boobs,
 	&-under-boobs,
 	&-thighs {
@@ -212,7 +241,7 @@
 	}
 	&-table{
 		display: grid;
-		grid-template-columns: 2.5fr repeat(9, 1fr);
+		grid-template-columns: 2.8fr repeat(9, 1fr);
 		grid-gap: 20px;
 		&-one{
 			font-weight: 700;

@@ -580,7 +580,11 @@
 	}
 	.account{
 		margin-top: 0;
+		.container{
+			padding: 0;
+		}
 		&-sidebar{
+			padding: 0 15px;
 			&-img{
 				display: none;
 				margin-left: 0;
@@ -590,7 +594,11 @@
 			}
 		}
 		&-orders{
+			h2{
+				padding: 0 15px;
+			}
 			&-tabs{
+				padding: 0 15px;
 				&-item{
 					width: 50%;
 					margin-right: 32px;
@@ -600,7 +608,7 @@
 			&-header{
 				flex-direction: column;
 				align-items: flex-start;
-				padding: 20px 10px;
+				padding: 20px 15px;
 				border-radius: 0;
 				&-submit{
 					display: none;
@@ -617,12 +625,15 @@
 				position: relative;
 				justify-content: flex-start;
 				padding: 10px 0;
-				margin: 0 10px;
+				margin: 0 15px;
+				// background-color: $lightGrey;
 				&-title{
 					margin-left: 10px;
 					h3{
 						span{
 							margin-top: 15px;
+							background: none;
+							padding: 0;
 						}
 					}
 				}
@@ -641,28 +652,78 @@
 			}
 		}
 		&-address{
+			border-radius: 0;
 			&-header{
-				padding: 20px 10px;
+				border-radius: 0;
+				padding: 20px 15px;
 			}
 			&-form{
-				padding: 0 20px 20px 20px;
+				padding: 0 15px 20px 15px;
 				&-block{
 					flex-direction: column;
+				}
+				&-submit{
+					flex-wrap: wrap;
+					button{
+						width: 100%;
+					}
+					p{
+						margin-top: 10px;
+						margin-left: 0;
+						br{
+							display: none;
+						}
+					}
 				}
 			}
 		}
 		&-item{
 			width: 50%;
+			&:hover {
+				transform: scale(1.1)!important;
+				.account-item__hover {
+					transform: scale(0.9)!important;
+				}
+			}
+		}
+		&-list{
+			padding: 0 5px;
+			&-header{
+				margin-bottom: 20px;
+				p {
+					padding: 0 15px;
+				}
+			}
 		}
 		&-profile{
+			border-radius: 0;
 			&-header{
-				padding: 20px 10px;
+				border-radius: 0;
+				padding: 20px 15px;
 			}
 			&-data{
-				padding: 0 20px 0 20px;
+				padding: 0 15px;
 			}
 			&-item{
 				width: 50%;
+				&:nth-child(1) {
+					order: 1;
+				}
+				&:nth-child(2) {
+					order: 2;
+				}
+				&:nth-child(3) {
+					order: 5;
+				}
+				&:nth-child(4) {
+					order: 3;
+				}
+				&:nth-child(5) {
+					order: 4;
+				}
+				&:nth-child(6) {
+					order: 6;
+				}
 			}
 		}
 	}
